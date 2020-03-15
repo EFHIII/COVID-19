@@ -78285,7 +78285,7 @@ function setup() {
 
   angleMode(DEGREES);
 
-  worldMap=loadImage("world_map.svg");
+  worldMap=loadImage("World_map.svg");
 }
 /*
 var eqar=function(lon,lat){
