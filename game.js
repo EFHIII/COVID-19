@@ -82,7 +82,27 @@ function draw() {
   textSize(15);
   text("Data from https://github.com/CSSEGISandData/COVID-19\n©2020 Edward Haas",width/2,height-5);
 
-  fill(255,0,0);
+  // LEGEND
+  textAlign(RIGHT,TOP);
+  textSize(15);
+  text('Confirmed Case: ', width -100, height -100);
+
+  text('Successful Recovery: ', width -100, height -80);
+
+  text('Death: ', width -100, height -60);
+  // Colors
+
+
+  fill(0,255,0)
+  rect(width-100, height-80, 20, 15)
+
+
+  fill(255,0,0)
+  rect(width-100, height-60, 20, 15)
+
+  fill(220,0,220);
+  rect(width-100, height-100, 20, 15)
+ 
 
   for(var i=timeLine[onDay].length/60;i>0;i--){
     var onRegion=timeLine[onDay][t][1];
