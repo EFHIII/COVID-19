@@ -44,8 +44,10 @@ for(var i=0;i<allStats[0][2][0].length;i++){
   timeLine.push([]);
 }
 for(var region=0;region<allStats.length;region++){
-  if(allStats[region][2]===undefined){continue;}
   particles.push([]);
+  if(allStats[region][2]===undefined){
+    continue;
+  }
   let day=0;
   var last=0;
   var lastRecovered=0;
