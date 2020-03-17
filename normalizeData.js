@@ -489,6 +489,10 @@ from:
 
 */
 
+var regions=[
+  ["Thailand",""],["Japan",""],["Singapore",""],["Nepal",""],["Malaysia",""],["Canada","British Columbia"],["Australia","New South Wales"],["Australia","Victoria"],["Australia","Queensland"],["Cambodia",""],["Sri Lanka",""],["Germany",""],["Finland",""],["United Arab Emirates",""],["Philippines",""],["India",""],["Italy",""],["Sweden",""],["Spain",""],["Australia","South Australia"],["Belgium",""],["Egypt",""],["Australia","From Diamond Princess"],["Lebanon",""],["Iraq",""],["Oman",""],["Afghanistan",""],["Bahrain",""],["Kuwait",""],["Algeria",""],["Croatia",""],["Switzerland",""],["Austria",""],["Israel",""],["Pakistan",""],["Brazil",""],["Georgia",""],["Greece",""],["North Macedonia",""],["Norway",""],["Romania",""],["Estonia",""],["Netherlands",""],["San Marino",""],["Belarus",""],["Iceland",""],["Lithuania",""],["Mexico",""],["New Zealand",""],["Nigeria",""],["Australia","Western Australia"],["Ireland",""],["Luxembourg",""],["Monaco",""],["Qatar",""],["Ecuador",""],["Azerbaijan",""],["Armenia",""],["Dominican Republic",""],["Indonesia",""],["Portugal",""],["Andorra",""],["Australia","Tasmania"],["Latvia",""],["Morocco",""],["Saudi Arabia",""],["Senegal",""],["Argentina",""],["Chile",""],["Jordan",""],["Ukraine",""],["Hungary",""],["Australia","Northern Territory"],["Liechtenstein",""],["Poland",""],["Tunisia",""],["Bosnia and Herzegovina",""],["Slovenia",""],["South Africa",""],["Bhutan",""],["Cameroon",""],["Colombia",""],["Costa Rica",""],["Peru",""],["Serbia",""],["Slovakia",""],["Togo",""],["Malta",""],["Martinique",""],["Bulgaria",""],["Maldives",""],["Bangladesh",""],["Paraguay",""],["Canada","Ontario"],["Canada","Alberta"],["Canada","Quebec"],["Albania",""],["Cyprus",""],["Brunei",""],["US","Washington"],["US","New York"],["US","California"],["US","Massachusetts"],["US","Diamond Princess"],["US","Grand Princess"],["US","Georgia"],["US","Colorado"],["US","Florida"],["US","New Jersey"],["US","Oregon"],["US","Texas"],["US","Illinois"],["US","Pennsylvania"],["US","Iowa"],["US","Maryland"],["US","North Carolina"],["US","South Carolina"],["US","Tennessee"],["US","Virginia"],["US","Arizona"],["US","Indiana"],["US","Kentucky"],["US","District of Columbia"],["US","Nevada"],["US","New Hampshire"],["US","Minnesota"],["US","Nebraska"],["US","Ohio"],["US","Rhode Island"],["US","Wisconsin"],["US","Connecticut"],["US","Hawaii"],["US","Oklahoma"],["US","Utah"],["Burkina Faso",""],["Holy See",""],["Mongolia",""],["Panama",""],["US","Kansas"],["US","Louisiana"],["US","Missouri"],["US","Vermont"],["US","Alaska"],["US","Arkansas"],["US","Delaware"],["US","Idaho"],["US","Maine"],["US","Michigan"],["US","Mississippi"],["US","Montana"],["US","New Mexico"],["US","North Dakota"],["US","South Dakota"],["US","West Virginia"],["US","Wyoming"],["China","Hubei"],["Iran",""],["Korea, South",""],["France","France"],["China","Guangdong"],["China","Henan"],["China","Zhejiang"],["China","Hunan"],["China","Anhui"],["China","Jiangxi"],["China","Shandong"],["Cruise Ship","Diamond Princess"],["China","Jiangsu"],["China","Chongqing"],["China","Sichuan"],["China","Heilongjiang"],["Denmark","Denmark"],["China","Beijing"],["China","Shanghai"],["China","Hebei"],["China","Fujian"],["China","Guangxi"],["China","Shaanxi"],["China","Yunnan"],["China","Hainan"],["China","Guizhou"],["China","Tianjin"],["China","Shanxi"],["China","Gansu"],["China","Hong Kong"],["China","Liaoning"],["China","Jilin"],["Czechia",""],["China","Xinjiang"],["China","Inner Mongolia"],["China","Ningxia"],["Taiwan*",""],["Vietnam",""],["Russia",""],["China","Qinghai"],["China","Macau"],["Moldova",""],["Bolivia",""],["Denmark","Faroe Islands"],["France","St Martin"],["Honduras",""],["United Kingdom","Channel Islands"],["Canada","New Brunswick"],["China","Tibet"],["Congo (Kinshasa)",""],["Cote d'Ivoire",""],["France","Saint Barthelemy"],["Jamaica",""],["Reunion",""],["Turkey",""],["United Kingdom","Gibraltar"],["US","Kitsap, WA"],["US","Solano, CA"],["US","Santa Cruz, CA"],["US","Napa, CA"],["US","Ventura, CA"],["US","Worcester, MA"],["US","Gwinnett, GA"],["US","DeKalb, GA"],["US","Floyd, GA"],["US","Fayette, GA"],["US","Gregg, TX"],["US","Monmouth, NJ"],["US","Burlington, NJ"],["US","Camden, NJ"],["US","Passaic, NJ"],["US","Union, NJ"],["US","Eagle, CO"],["US","Larimer, CO"],["US","Arapahoe, CO"],["US","Gunnison, CO"],["US","Kane, IL"],["US","Monroe, PA"],["US","Philadelphia, PA"],["US","Norfolk, VA"],["US","Arlington, VA"],["US","Spotsylvania, VA"],["US","Loudoun, VA"],["US","Prince George's, MD"],["US","Pottawattamie, IA"],["US","Camden, NC"],["US","Pima, AZ"],["US","Noble, IN"],["US","Adams, IN"],["US","Boone, IN"],["US","Dane, WI"],["US","Pierce, WI"],["US","Cuyahoga, OH"],["US","Weber, UT"],["US","Bennington County, VT"],["US","Carver County, MN"],["US","Charlotte County, FL"],["US","Cherokee County, GA"],["US","Collin County, TX"],["US","Jefferson County, KY"],["US","Jefferson Parish, LA"],["US","Shasta County, CA"],["US","Spartanburg County, SC"],["US","Harrison County, KY"],["US","Johnson County, IA"],["US","Berkshire County, MA"],["US","Davidson County, TN"],["US","Douglas County, OR"],["US","Fresno County, CA"],["US","Harford County, MD"],["US","Hendricks County, IN"],["US","Hudson County, NJ"],["US","Johnson County, KS"],["US","Kittitas County, WA"],["US","Manatee County, FL"],["US","Marion County, OR"],["US","Okaloosa County, FL"],["US","Polk County, GA"],["US","Riverside County, CA"],["US","Shelby County, TN"],["US","St. Louis County, MO"],["US","Suffolk County, NY"],["US","Ulster County, NY"],["US","Volusia County, FL"],["US","Fairfax County, VA"],["US","Rockingham County, NH"],["US","Washington, D.C."],["US","Montgomery County, PA"],["US","Alameda County, CA"],["US","Broward County, FL"],["US","Lee County, FL"],["US","Pinal County, AZ"],["US","Rockland County, NY"],["US","Saratoga County, NY"],["US","Charleston County, SC"],["US","Clark County, WA"],["US","Cobb County, GA"],["US","Davis County, UT"],["US","El Paso County, CO"],["US","Honolulu County, HI"],["US","Jackson County, OR"],["US","Jefferson County, WA"],["US","Kershaw County, SC"],["US","Klamath County, OR"],["US","Madera County, CA"],["US","Pierce County, WA"],["US","Tulsa County, OK"],["US","Douglas County, CO"],["US","Providence County, RI"],["US","Chatham County, NC"],["US","Delaware County, PA"],["US","Douglas County, NE"],["US","Fayette County, KY"],["US","Marion County, IN"],["US","Middlesex County, MA"],["US","Nassau County, NY"],["US","Ramsey County, MN"],["US","Washoe County, NV"],["US","Wayne County, PA"],["US","Yolo County, CA"],["US","Santa Clara County, CA"],["US","Clark County, NV"],["US","Fort Bend County, TX"],["US","Grant County, WA"],["US","Santa Rosa County, FL"],["US","Williamson County, TN"],["US","New York County, NY"],["US","Montgomery County, MD"],["US","Suffolk County, MA"],["US","Denver County, CO"],["US","Summit County, CO"],["US","Bergen County, NJ"],["US","Harris County, TX"],["US","San Francisco County, CA"],["US","Contra Costa County, CA"],["US","Orange County, CA"],["US","Norfolk County, MA"],["US","Maricopa County, AZ"],["US","Wake County, NC"],["US","Westchester County, NY"],["US","Grafton County, NH"],["US","Hillsborough, FL"],["US","Placer County, CA"],["US","San Mateo, CA"],["US","Sonoma County, CA"],["US","Umatilla, OR"],["US","Fulton County, GA"],["US","Washington County, OR"],["US","Snohomish County, WA"],["US","Humboldt County, CA"],["US","Sacramento County, CA"],["US","San Diego County, CA"],["US","San Benito, CA"],["US","Los Angeles, CA"],["US","King County, WA"],["US","Cook County, IL"],["US","Skagit, WA"],["US","Thurston, WA"],["US","Island, WA"],["US","Whatcom, WA"],["US","Marin, CA"],["US","Calaveras, CA"],["US","Stanislaus, CA"],["US","San Joaquin, CA"],["US","Essex, MA"],["US","Charlton, GA"],["US","Collier, FL"],["US","Pinellas, FL"],["US","Alachua, FL"],["US","Nassau, FL"],["US","Pasco, FL"],["US","Dallas, TX"],["US","Tarrant, TX"],["US","Montgomery, TX"],["US","Middlesex, NJ"],["US","Jefferson, CO"],["US","Multnomah, OR"],["US","Polk, OR"],["US","Deschutes, OR"],["US","McHenry, IL"],["US","Lake, IL"],["US","Bucks, PA"],["US","Hanover, VA"],["US","Lancaster, SC"],["US","Sullivan, TN"],["US","Johnson, IN"],["US","Howard, IN"],["US","St. Joseph, IN"],["US","Knox, NE"],["US","Stark, OH"],["US","Anoka, MN"],["US","Olmsted, MN"],["US","Summit, UT"],["US","Fairfield, CT"],["US","Litchfield, CT"],["US","Orleans, LA"],["US","Pennington, SD"],["US","Beadle, SD"],["US","Charles Mix, SD"],["US","Davison, SD"],["US","Minnehaha, SD"],["US","Bon Homme, SD"],["US","Socorro, NM"],["US","Bernalillo, NM"],["US","Oakland, MI"],["US","Wayne, MI"],["US","New Castle, DE"],["Cuba",""],["Guyana",""],["Australia","Australian Capital Territory"],["United Kingdom","United Kingdom"],["Kazakhstan",""],["France","French Polynesia"],["Cayman Islands",""],["Guadeloupe",""],["Canada","Manitoba"],["Canada","Saskatchewan"],["Ethiopia",""],["Sudan",""],["Guinea",""],["Aruba",""],["Canada","Grand Princess"],["Kenya",""],["Antigua and Barbuda",""],["US","Alabama"],["Uruguay",""],["Ghana",""],["US","Puerto Rico"],["Jersey",""],["Namibia",""],["Seychelles",""],["Trinidad and Tobago",""],["Venezuela",""],["Curacao",""],["Eswatini",""],["Gabon",""],["Guatemala",""],["Guernsey",""],["Mauritania",""],["Rwanda",""],["Saint Lucia",""],["Saint Vincent and the Grenadines",""],["Suriname",""],["US","Virgin Islands, U.S."],["occupied Palestinian territory",""],["France","French Guiana"],["US","Guam"],["Kosovo",""],["Canada","Newfoundland and Labrador"],["Canada","Prince Edward Island"],["Central African Republic",""],["Congo (Brazzaville)",""],["Equatorial Guinea",""],["France","Mayotte"],["Uzbekistan",""]
+];
+
 var confirmed=[
   {
     "Province/State": "",
@@ -81503,6 +81507,10 @@ for(var k in confirmed[0]){
   if(k.indexOf('/20')>0){dates.push(k);}
 }
 
+for(var reg=0;reg<regions.length;reg++){
+  data.push([]);
+}
+var newP=[];
 for(var i=0;i<confirmed.length;i++){
   var cnf=[],rec=[],ded=[];
   for(var d=0;d<dates.length;d++){
@@ -81510,7 +81518,32 @@ for(var i=0;i<confirmed.length;i++){
     rec.push(recoveries[i][dates[d]]);
     ded.push(deaths[i][dates[d]]);
   }
-  data.push([confirmed[i].Lat,confirmed[i].Long,[cnf,rec,ded]]);
+
+  var r=-1;
+  for(var reg=0;reg<regions.length;reg++){
+    if(confirmed[i]["Country/Region"]===regions[reg][0] && confirmed[i]["Province/State"]===regions[reg][1]){
+      r=reg;
+      reg=regions.length;
+    }
+  }
+
+  if(r>=0){
+    data[r]=[confirmed[i].Lat,confirmed[i].Long,[cnf,rec,ded]];
+  }
+  else{
+    newP.push([confirmed[i]["Country/Region"],confirmed[i]["Province/State"]]);
+    data.push([confirmed[i].Lat,confirmed[i].Long,[cnf,rec,ded]]);
+  }
+}
+
+if(newP.length>0){
+  var txt='';
+  for(var i=0;i<confirmed.length;i++){
+    txt+=(i/255>>0)+","+(i%255)+"- "+confirmed[i]["Province/State"]+", "+confirmed[i]["Country/Region"]+"\n";
+  }
+  console.log(txt);
+
+  console.log(newP);
 }
 
 document.body.innerText=JSON.stringify(data);
