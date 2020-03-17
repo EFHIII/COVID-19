@@ -195,7 +195,7 @@ function draw() {
   text(dateTime.toDateString().split(' ').slice(1,4).join(' '),width/2,5);
   textAlign(CENTER,BOTTOM);
   textSize(15);
-  text("Data from https://github.com/CSSEGISandData/COVID-19\nPosition of dots is approximate based on country/region and is inaccurate\n©2020 Edward Haas",width/2,height-5);
+  text("Only showing reported confirmed cases; https://github.com/CSSEGISandData/COVID-19\nPosition of dots is approximate based on country/region and is inaccurate\n©2020 Edward Haas",width/2,height-5);
 
   fill(255,0,0);
 
