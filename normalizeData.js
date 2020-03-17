@@ -41,7 +41,7 @@
 0,39- , Norway
 0,40- , Romania
 0,41- , Estonia
-0,42- , Netherlands
+0,42- Netherlands, Netherlands
 0,43- , San Marino
 0,44- , Belarus
 0,45- , Iceland
@@ -407,7 +407,7 @@
 1,150- United Kingdom, United Kingdom
 1,151- , Kazakhstan
 1,152- French Polynesia, France
-1,153- , Cayman Islands
+
 1,154- , Guadeloupe
 1,155- Manitoba, Canada
 1,156- Saskatchewan, Canada
@@ -427,7 +427,7 @@
 1,170- , Seychelles
 1,171- , Trinidad and Tobago
 1,172- , Venezuela
-1,173- , Curacao
+
 1,174- , Eswatini
 1,175- , Gabon
 1,176- , Guatemala
@@ -437,7 +437,7 @@
 1,180- , Saint Lucia
 1,181- , Saint Vincent and the Grenadines
 1,182- , Suriname
-1,183- Virgin Islands, U.S., US
+1,183- Virgin Islands, US
 1,184- , occupied Palestinian territory
 1,185- French Guiana, France
 1,186- Guam, US
@@ -449,7 +449,21 @@
 1,192- , Equatorial Guinea
 1,193- Mayotte, France
 1,194- , Uzbekistan
-
+1,195- , French Guiana
+1,196- Nova Scotia, Canada
+1,197- , Guam
+1,198- , Puerto Rico
+1,199- , Benin
+1,200- , Greenland
+1,201- , Liberia
+1,202- , Mayotte
+1,203- Curacao, Netherlands
+1,204- , Republic of the Congo
+1,205- , Somalia
+1,206- , Tanzania
+1,207- , The Bahamas
+1,208- France, Guadeloupe
+1,209- United Kingdom, Cayman Islands
 */
 
 
@@ -490,7 +504,7 @@ from:
 */
 
 var regions=[
-  ["Thailand",""],["Japan",""],["Singapore",""],["Nepal",""],["Malaysia",""],["Canada","British Columbia"],["Australia","New South Wales"],["Australia","Victoria"],["Australia","Queensland"],["Cambodia",""],["Sri Lanka",""],["Germany",""],["Finland",""],["United Arab Emirates",""],["Philippines",""],["India",""],["Italy",""],["Sweden",""],["Spain",""],["Australia","South Australia"],["Belgium",""],["Egypt",""],["Australia","From Diamond Princess"],["Lebanon",""],["Iraq",""],["Oman",""],["Afghanistan",""],["Bahrain",""],["Kuwait",""],["Algeria",""],["Croatia",""],["Switzerland",""],["Austria",""],["Israel",""],["Pakistan",""],["Brazil",""],["Georgia",""],["Greece",""],["North Macedonia",""],["Norway",""],["Romania",""],["Estonia",""],["Netherlands",""],["San Marino",""],["Belarus",""],["Iceland",""],["Lithuania",""],["Mexico",""],["New Zealand",""],["Nigeria",""],["Australia","Western Australia"],["Ireland",""],["Luxembourg",""],["Monaco",""],["Qatar",""],["Ecuador",""],["Azerbaijan",""],["Armenia",""],["Dominican Republic",""],["Indonesia",""],["Portugal",""],["Andorra",""],["Australia","Tasmania"],["Latvia",""],["Morocco",""],["Saudi Arabia",""],["Senegal",""],["Argentina",""],["Chile",""],["Jordan",""],["Ukraine",""],["Hungary",""],["Australia","Northern Territory"],["Liechtenstein",""],["Poland",""],["Tunisia",""],["Bosnia and Herzegovina",""],["Slovenia",""],["South Africa",""],["Bhutan",""],["Cameroon",""],["Colombia",""],["Costa Rica",""],["Peru",""],["Serbia",""],["Slovakia",""],["Togo",""],["Malta",""],["Martinique",""],["Bulgaria",""],["Maldives",""],["Bangladesh",""],["Paraguay",""],["Canada","Ontario"],["Canada","Alberta"],["Canada","Quebec"],["Albania",""],["Cyprus",""],["Brunei",""],["US","Washington"],["US","New York"],["US","California"],["US","Massachusetts"],["US","Diamond Princess"],["US","Grand Princess"],["US","Georgia"],["US","Colorado"],["US","Florida"],["US","New Jersey"],["US","Oregon"],["US","Texas"],["US","Illinois"],["US","Pennsylvania"],["US","Iowa"],["US","Maryland"],["US","North Carolina"],["US","South Carolina"],["US","Tennessee"],["US","Virginia"],["US","Arizona"],["US","Indiana"],["US","Kentucky"],["US","District of Columbia"],["US","Nevada"],["US","New Hampshire"],["US","Minnesota"],["US","Nebraska"],["US","Ohio"],["US","Rhode Island"],["US","Wisconsin"],["US","Connecticut"],["US","Hawaii"],["US","Oklahoma"],["US","Utah"],["Burkina Faso",""],["Holy See",""],["Mongolia",""],["Panama",""],["US","Kansas"],["US","Louisiana"],["US","Missouri"],["US","Vermont"],["US","Alaska"],["US","Arkansas"],["US","Delaware"],["US","Idaho"],["US","Maine"],["US","Michigan"],["US","Mississippi"],["US","Montana"],["US","New Mexico"],["US","North Dakota"],["US","South Dakota"],["US","West Virginia"],["US","Wyoming"],["China","Hubei"],["Iran",""],["Korea, South",""],["France","France"],["China","Guangdong"],["China","Henan"],["China","Zhejiang"],["China","Hunan"],["China","Anhui"],["China","Jiangxi"],["China","Shandong"],["Cruise Ship","Diamond Princess"],["China","Jiangsu"],["China","Chongqing"],["China","Sichuan"],["China","Heilongjiang"],["Denmark","Denmark"],["China","Beijing"],["China","Shanghai"],["China","Hebei"],["China","Fujian"],["China","Guangxi"],["China","Shaanxi"],["China","Yunnan"],["China","Hainan"],["China","Guizhou"],["China","Tianjin"],["China","Shanxi"],["China","Gansu"],["China","Hong Kong"],["China","Liaoning"],["China","Jilin"],["Czechia",""],["China","Xinjiang"],["China","Inner Mongolia"],["China","Ningxia"],["Taiwan*",""],["Vietnam",""],["Russia",""],["China","Qinghai"],["China","Macau"],["Moldova",""],["Bolivia",""],["Denmark","Faroe Islands"],["France","St Martin"],["Honduras",""],["United Kingdom","Channel Islands"],["Canada","New Brunswick"],["China","Tibet"],["Congo (Kinshasa)",""],["Cote d'Ivoire",""],["France","Saint Barthelemy"],["Jamaica",""],["Reunion",""],["Turkey",""],["United Kingdom","Gibraltar"],["US","Kitsap, WA"],["US","Solano, CA"],["US","Santa Cruz, CA"],["US","Napa, CA"],["US","Ventura, CA"],["US","Worcester, MA"],["US","Gwinnett, GA"],["US","DeKalb, GA"],["US","Floyd, GA"],["US","Fayette, GA"],["US","Gregg, TX"],["US","Monmouth, NJ"],["US","Burlington, NJ"],["US","Camden, NJ"],["US","Passaic, NJ"],["US","Union, NJ"],["US","Eagle, CO"],["US","Larimer, CO"],["US","Arapahoe, CO"],["US","Gunnison, CO"],["US","Kane, IL"],["US","Monroe, PA"],["US","Philadelphia, PA"],["US","Norfolk, VA"],["US","Arlington, VA"],["US","Spotsylvania, VA"],["US","Loudoun, VA"],["US","Prince George's, MD"],["US","Pottawattamie, IA"],["US","Camden, NC"],["US","Pima, AZ"],["US","Noble, IN"],["US","Adams, IN"],["US","Boone, IN"],["US","Dane, WI"],["US","Pierce, WI"],["US","Cuyahoga, OH"],["US","Weber, UT"],["US","Bennington County, VT"],["US","Carver County, MN"],["US","Charlotte County, FL"],["US","Cherokee County, GA"],["US","Collin County, TX"],["US","Jefferson County, KY"],["US","Jefferson Parish, LA"],["US","Shasta County, CA"],["US","Spartanburg County, SC"],["US","Harrison County, KY"],["US","Johnson County, IA"],["US","Berkshire County, MA"],["US","Davidson County, TN"],["US","Douglas County, OR"],["US","Fresno County, CA"],["US","Harford County, MD"],["US","Hendricks County, IN"],["US","Hudson County, NJ"],["US","Johnson County, KS"],["US","Kittitas County, WA"],["US","Manatee County, FL"],["US","Marion County, OR"],["US","Okaloosa County, FL"],["US","Polk County, GA"],["US","Riverside County, CA"],["US","Shelby County, TN"],["US","St. Louis County, MO"],["US","Suffolk County, NY"],["US","Ulster County, NY"],["US","Volusia County, FL"],["US","Fairfax County, VA"],["US","Rockingham County, NH"],["US","Washington, D.C."],["US","Montgomery County, PA"],["US","Alameda County, CA"],["US","Broward County, FL"],["US","Lee County, FL"],["US","Pinal County, AZ"],["US","Rockland County, NY"],["US","Saratoga County, NY"],["US","Charleston County, SC"],["US","Clark County, WA"],["US","Cobb County, GA"],["US","Davis County, UT"],["US","El Paso County, CO"],["US","Honolulu County, HI"],["US","Jackson County, OR"],["US","Jefferson County, WA"],["US","Kershaw County, SC"],["US","Klamath County, OR"],["US","Madera County, CA"],["US","Pierce County, WA"],["US","Tulsa County, OK"],["US","Douglas County, CO"],["US","Providence County, RI"],["US","Chatham County, NC"],["US","Delaware County, PA"],["US","Douglas County, NE"],["US","Fayette County, KY"],["US","Marion County, IN"],["US","Middlesex County, MA"],["US","Nassau County, NY"],["US","Ramsey County, MN"],["US","Washoe County, NV"],["US","Wayne County, PA"],["US","Yolo County, CA"],["US","Santa Clara County, CA"],["US","Clark County, NV"],["US","Fort Bend County, TX"],["US","Grant County, WA"],["US","Santa Rosa County, FL"],["US","Williamson County, TN"],["US","New York County, NY"],["US","Montgomery County, MD"],["US","Suffolk County, MA"],["US","Denver County, CO"],["US","Summit County, CO"],["US","Bergen County, NJ"],["US","Harris County, TX"],["US","San Francisco County, CA"],["US","Contra Costa County, CA"],["US","Orange County, CA"],["US","Norfolk County, MA"],["US","Maricopa County, AZ"],["US","Wake County, NC"],["US","Westchester County, NY"],["US","Grafton County, NH"],["US","Hillsborough, FL"],["US","Placer County, CA"],["US","San Mateo, CA"],["US","Sonoma County, CA"],["US","Umatilla, OR"],["US","Fulton County, GA"],["US","Washington County, OR"],["US","Snohomish County, WA"],["US","Humboldt County, CA"],["US","Sacramento County, CA"],["US","San Diego County, CA"],["US","San Benito, CA"],["US","Los Angeles, CA"],["US","King County, WA"],["US","Cook County, IL"],["US","Skagit, WA"],["US","Thurston, WA"],["US","Island, WA"],["US","Whatcom, WA"],["US","Marin, CA"],["US","Calaveras, CA"],["US","Stanislaus, CA"],["US","San Joaquin, CA"],["US","Essex, MA"],["US","Charlton, GA"],["US","Collier, FL"],["US","Pinellas, FL"],["US","Alachua, FL"],["US","Nassau, FL"],["US","Pasco, FL"],["US","Dallas, TX"],["US","Tarrant, TX"],["US","Montgomery, TX"],["US","Middlesex, NJ"],["US","Jefferson, CO"],["US","Multnomah, OR"],["US","Polk, OR"],["US","Deschutes, OR"],["US","McHenry, IL"],["US","Lake, IL"],["US","Bucks, PA"],["US","Hanover, VA"],["US","Lancaster, SC"],["US","Sullivan, TN"],["US","Johnson, IN"],["US","Howard, IN"],["US","St. Joseph, IN"],["US","Knox, NE"],["US","Stark, OH"],["US","Anoka, MN"],["US","Olmsted, MN"],["US","Summit, UT"],["US","Fairfield, CT"],["US","Litchfield, CT"],["US","Orleans, LA"],["US","Pennington, SD"],["US","Beadle, SD"],["US","Charles Mix, SD"],["US","Davison, SD"],["US","Minnehaha, SD"],["US","Bon Homme, SD"],["US","Socorro, NM"],["US","Bernalillo, NM"],["US","Oakland, MI"],["US","Wayne, MI"],["US","New Castle, DE"],["Cuba",""],["Guyana",""],["Australia","Australian Capital Territory"],["United Kingdom","United Kingdom"],["Kazakhstan",""],["France","French Polynesia"],["Cayman Islands",""],["Guadeloupe",""],["Canada","Manitoba"],["Canada","Saskatchewan"],["Ethiopia",""],["Sudan",""],["Guinea",""],["Aruba",""],["Canada","Grand Princess"],["Kenya",""],["Antigua and Barbuda",""],["US","Alabama"],["Uruguay",""],["Ghana",""],["US","Puerto Rico"],["Jersey",""],["Namibia",""],["Seychelles",""],["Trinidad and Tobago",""],["Venezuela",""],["Curacao",""],["Eswatini",""],["Gabon",""],["Guatemala",""],["Guernsey",""],["Mauritania",""],["Rwanda",""],["Saint Lucia",""],["Saint Vincent and the Grenadines",""],["Suriname",""],["US","Virgin Islands, U.S."],["occupied Palestinian territory",""],["France","French Guiana"],["US","Guam"],["Kosovo",""],["Canada","Newfoundland and Labrador"],["Canada","Prince Edward Island"],["Central African Republic",""],["Congo (Brazzaville)",""],["Equatorial Guinea",""],["France","Mayotte"],["Uzbekistan",""]
+  ["Thailand",""],["Japan",""],["Singapore",""],["Nepal",""],["Malaysia",""],["Canada","British Columbia"],["Australia","New South Wales"],["Australia","Victoria"],["Australia","Queensland"],["Cambodia",""],["Sri Lanka",""],["Germany",""],["Finland",""],["United Arab Emirates",""],["Philippines",""],["India",""],["Italy",""],["Sweden",""],["Spain",""],["Australia","South Australia"],["Belgium",""],["Egypt",""],["Australia","From Diamond Princess"],["Lebanon",""],["Iraq",""],["Oman",""],["Afghanistan",""],["Bahrain",""],["Kuwait",""],["Algeria",""],["Croatia",""],["Switzerland",""],["Austria",""],["Israel",""],["Pakistan",""],["Brazil",""],["Georgia",""],["Greece",""],["North Macedonia",""],["Norway",""],["Romania",""],["Estonia",""],["Netherlands","Netherlands"],["San Marino",""],["Belarus",""],["Iceland",""],["Lithuania",""],["Mexico",""],["New Zealand",""],["Nigeria",""],["Australia","Western Australia"],["Ireland",""],["Luxembourg",""],["Monaco",""],["Qatar",""],["Ecuador",""],["Azerbaijan",""],["Armenia",""],["Dominican Republic",""],["Indonesia",""],["Portugal",""],["Andorra",""],["Australia","Tasmania"],["Latvia",""],["Morocco",""],["Saudi Arabia",""],["Senegal",""],["Argentina",""],["Chile",""],["Jordan",""],["Ukraine",""],["Hungary",""],["Australia","Northern Territory"],["Liechtenstein",""],["Poland",""],["Tunisia",""],["Bosnia and Herzegovina",""],["Slovenia",""],["South Africa",""],["Bhutan",""],["Cameroon",""],["Colombia",""],["Costa Rica",""],["Peru",""],["Serbia",""],["Slovakia",""],["Togo",""],["Malta",""],["Martinique",""],["Bulgaria",""],["Maldives",""],["Bangladesh",""],["Paraguay",""],["Canada","Ontario"],["Canada","Alberta"],["Canada","Quebec"],["Albania",""],["Cyprus",""],["Brunei",""],["US","Washington"],["US","New York"],["US","California"],["US","Massachusetts"],["US","Diamond Princess"],["US","Grand Princess"],["US","Georgia"],["US","Colorado"],["US","Florida"],["US","New Jersey"],["US","Oregon"],["US","Texas"],["US","Illinois"],["US","Pennsylvania"],["US","Iowa"],["US","Maryland"],["US","North Carolina"],["US","South Carolina"],["US","Tennessee"],["US","Virginia"],["US","Arizona"],["US","Indiana"],["US","Kentucky"],["US","District of Columbia"],["US","Nevada"],["US","New Hampshire"],["US","Minnesota"],["US","Nebraska"],["US","Ohio"],["US","Rhode Island"],["US","Wisconsin"],["US","Connecticut"],["US","Hawaii"],["US","Oklahoma"],["US","Utah"],["Burkina Faso",""],["Holy See",""],["Mongolia",""],["Panama",""],["US","Kansas"],["US","Louisiana"],["US","Missouri"],["US","Vermont"],["US","Alaska"],["US","Arkansas"],["US","Delaware"],["US","Idaho"],["US","Maine"],["US","Michigan"],["US","Mississippi"],["US","Montana"],["US","New Mexico"],["US","North Dakota"],["US","South Dakota"],["US","West Virginia"],["US","Wyoming"],["China","Hubei"],["Iran",""],["Korea, South",""],["France","France"],["China","Guangdong"],["China","Henan"],["China","Zhejiang"],["China","Hunan"],["China","Anhui"],["China","Jiangxi"],["China","Shandong"],["Cruise Ship","Diamond Princess"],["China","Jiangsu"],["China","Chongqing"],["China","Sichuan"],["China","Heilongjiang"],["Denmark","Denmark"],["China","Beijing"],["China","Shanghai"],["China","Hebei"],["China","Fujian"],["China","Guangxi"],["China","Shaanxi"],["China","Yunnan"],["China","Hainan"],["China","Guizhou"],["China","Tianjin"],["China","Shanxi"],["China","Gansu"],["China","Hong Kong"],["China","Liaoning"],["China","Jilin"],["Czechia",""],["China","Xinjiang"],["China","Inner Mongolia"],["China","Ningxia"],["Taiwan*",""],["Vietnam",""],["Russia",""],["China","Qinghai"],["China","Macau"],["Moldova",""],["Bolivia",""],["Denmark","Faroe Islands"],["France","St Martin"],["Honduras",""],["United Kingdom","Channel Islands"],["Canada","New Brunswick"],["China","Tibet"],["Congo (Kinshasa)",""],["Cote d'Ivoire",""],["France","Saint Barthelemy"],["Jamaica",""],["Reunion",""],["Turkey",""],["United Kingdom","Gibraltar"],["US","Kitsap, WA"],["US","Solano, CA"],["US","Santa Cruz, CA"],["US","Napa, CA"],["US","Ventura, CA"],["US","Worcester, MA"],["US","Gwinnett, GA"],["US","DeKalb, GA"],["US","Floyd, GA"],["US","Fayette, GA"],["US","Gregg, TX"],["US","Monmouth, NJ"],["US","Burlington, NJ"],["US","Camden, NJ"],["US","Passaic, NJ"],["US","Union, NJ"],["US","Eagle, CO"],["US","Larimer, CO"],["US","Arapahoe, CO"],["US","Gunnison, CO"],["US","Kane, IL"],["US","Monroe, PA"],["US","Philadelphia, PA"],["US","Norfolk, VA"],["US","Arlington, VA"],["US","Spotsylvania, VA"],["US","Loudoun, VA"],["US","Prince George's, MD"],["US","Pottawattamie, IA"],["US","Camden, NC"],["US","Pima, AZ"],["US","Noble, IN"],["US","Adams, IN"],["US","Boone, IN"],["US","Dane, WI"],["US","Pierce, WI"],["US","Cuyahoga, OH"],["US","Weber, UT"],["US","Bennington County, VT"],["US","Carver County, MN"],["US","Charlotte County, FL"],["US","Cherokee County, GA"],["US","Collin County, TX"],["US","Jefferson County, KY"],["US","Jefferson Parish, LA"],["US","Shasta County, CA"],["US","Spartanburg County, SC"],["US","Harrison County, KY"],["US","Johnson County, IA"],["US","Berkshire County, MA"],["US","Davidson County, TN"],["US","Douglas County, OR"],["US","Fresno County, CA"],["US","Harford County, MD"],["US","Hendricks County, IN"],["US","Hudson County, NJ"],["US","Johnson County, KS"],["US","Kittitas County, WA"],["US","Manatee County, FL"],["US","Marion County, OR"],["US","Okaloosa County, FL"],["US","Polk County, GA"],["US","Riverside County, CA"],["US","Shelby County, TN"],["US","St. Louis County, MO"],["US","Suffolk County, NY"],["US","Ulster County, NY"],["US","Volusia County, FL"],["US","Fairfax County, VA"],["US","Rockingham County, NH"],["US","Washington, D.C."],["US","Montgomery County, PA"],["US","Alameda County, CA"],["US","Broward County, FL"],["US","Lee County, FL"],["US","Pinal County, AZ"],["US","Rockland County, NY"],["US","Saratoga County, NY"],["US","Charleston County, SC"],["US","Clark County, WA"],["US","Cobb County, GA"],["US","Davis County, UT"],["US","El Paso County, CO"],["US","Honolulu County, HI"],["US","Jackson County, OR"],["US","Jefferson County, WA"],["US","Kershaw County, SC"],["US","Klamath County, OR"],["US","Madera County, CA"],["US","Pierce County, WA"],["US","Tulsa County, OK"],["US","Douglas County, CO"],["US","Providence County, RI"],["US","Chatham County, NC"],["US","Delaware County, PA"],["US","Douglas County, NE"],["US","Fayette County, KY"],["US","Marion County, IN"],["US","Middlesex County, MA"],["US","Nassau County, NY"],["US","Ramsey County, MN"],["US","Washoe County, NV"],["US","Wayne County, PA"],["US","Yolo County, CA"],["US","Santa Clara County, CA"],["US","Clark County, NV"],["US","Fort Bend County, TX"],["US","Grant County, WA"],["US","Santa Rosa County, FL"],["US","Williamson County, TN"],["US","New York County, NY"],["US","Montgomery County, MD"],["US","Suffolk County, MA"],["US","Denver County, CO"],["US","Summit County, CO"],["US","Bergen County, NJ"],["US","Harris County, TX"],["US","San Francisco County, CA"],["US","Contra Costa County, CA"],["US","Orange County, CA"],["US","Norfolk County, MA"],["US","Maricopa County, AZ"],["US","Wake County, NC"],["US","Westchester County, NY"],["US","Grafton County, NH"],["US","Hillsborough, FL"],["US","Placer County, CA"],["US","San Mateo, CA"],["US","Sonoma County, CA"],["US","Umatilla, OR"],["US","Fulton County, GA"],["US","Washington County, OR"],["US","Snohomish County, WA"],["US","Humboldt County, CA"],["US","Sacramento County, CA"],["US","San Diego County, CA"],["US","San Benito, CA"],["US","Los Angeles, CA"],["US","King County, WA"],["US","Cook County, IL"],["US","Skagit, WA"],["US","Thurston, WA"],["US","Island, WA"],["US","Whatcom, WA"],["US","Marin, CA"],["US","Calaveras, CA"],["US","Stanislaus, CA"],["US","San Joaquin, CA"],["US","Essex, MA"],["US","Charlton, GA"],["US","Collier, FL"],["US","Pinellas, FL"],["US","Alachua, FL"],["US","Nassau, FL"],["US","Pasco, FL"],["US","Dallas, TX"],["US","Tarrant, TX"],["US","Montgomery, TX"],["US","Middlesex, NJ"],["US","Jefferson, CO"],["US","Multnomah, OR"],["US","Polk, OR"],["US","Deschutes, OR"],["US","McHenry, IL"],["US","Lake, IL"],["US","Bucks, PA"],["US","Hanover, VA"],["US","Lancaster, SC"],["US","Sullivan, TN"],["US","Johnson, IN"],["US","Howard, IN"],["US","St. Joseph, IN"],["US","Knox, NE"],["US","Stark, OH"],["US","Anoka, MN"],["US","Olmsted, MN"],["US","Summit, UT"],["US","Fairfield, CT"],["US","Litchfield, CT"],["US","Orleans, LA"],["US","Pennington, SD"],["US","Beadle, SD"],["US","Charles Mix, SD"],["US","Davison, SD"],["US","Minnehaha, SD"],["US","Bon Homme, SD"],["US","Socorro, NM"],["US","Bernalillo, NM"],["US","Oakland, MI"],["US","Wayne, MI"],["US","New Castle, DE"],["Cuba",""],["Guyana",""],["Australia","Australian Capital Territory"],["United Kingdom","United Kingdom"],["Kazakhstan",""],["France","French Polynesia"],["Cayman Islands",""],["Guadeloupe",""],["Canada","Manitoba"],["Canada","Saskatchewan"],["Ethiopia",""],["Sudan",""],["Guinea",""],["Aruba",""],["Canada","Grand Princess"],["Kenya",""],["Antigua and Barbuda",""],["US","Alabama"],["Uruguay",""],["Ghana",""],["US","Puerto Rico"],["Jersey",""],["Namibia",""],["Seychelles",""],["Trinidad and Tobago",""],["Venezuela",""],["Curacao",""],["Eswatini",""],["Gabon",""],["Guatemala",""],["Guernsey",""],["Mauritania",""],["Rwanda",""],["Saint Lucia",""],["Saint Vincent and the Grenadines",""],["Suriname",""],["US","Virgin Islands"],["occupied Palestinian territory",""],["France","French Guiana"],["US","Guam"],["Kosovo",""],["Canada","Newfoundland and Labrador"],["Canada","Prince Edward Island"],["Central African Republic",""],["Congo (Brazzaville)",""],["Equatorial Guinea",""],["France","Mayotte"],["Uzbekistan",""],["French Guiana",""],["Canada","Nova Scotia"],["Guam",""],["Puerto Rico",""],["Benin",""],["Greenland",""],["Liberia",""],["Mayotte",""],["Netherlands","Curacao"],["Republic of the Congo",""],["Somalia",""],["Tanzania",""],["The Bahamas",""],["France","Guadeloupe"],["United Kingdom","Cayman Islands"]
 ];
 
 var confirmed=[
@@ -552,7 +566,8 @@ var confirmed=[
     "3/12/20": 70,
     "3/13/20": 75,
     "3/14/20": 82,
-    "3/15/20": 114
+    "3/15/20": 114,
+    "3/16/20": 147
   },
   {
     "Province/State": "",
@@ -612,7 +627,8 @@ var confirmed=[
     "3/12/20": 639,
     "3/13/20": 701,
     "3/14/20": 773,
-    "3/15/20": 839
+    "3/15/20": 839,
+    "3/16/20": 825
   },
   {
     "Province/State": "",
@@ -672,7 +688,8 @@ var confirmed=[
     "3/12/20": 178,
     "3/13/20": 200,
     "3/14/20": 212,
-    "3/15/20": 226
+    "3/15/20": 226,
+    "3/16/20": 243
   },
   {
     "Province/State": "",
@@ -732,7 +749,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -792,7 +810,8 @@ var confirmed=[
     "3/12/20": 149,
     "3/13/20": 197,
     "3/14/20": 238,
-    "3/15/20": 428
+    "3/15/20": 428,
+    "3/16/20": 566
   },
   {
     "Province/State": "British Columbia",
@@ -852,7 +871,8 @@ var confirmed=[
     "3/12/20": 46,
     "3/13/20": 64,
     "3/14/20": 64,
-    "3/15/20": 73
+    "3/15/20": 73,
+    "3/16/20": 103
   },
   {
     "Province/State": "New South Wales",
@@ -912,7 +932,8 @@ var confirmed=[
     "3/12/20": 65,
     "3/13/20": 92,
     "3/14/20": 112,
-    "3/15/20": 134
+    "3/15/20": 134,
+    "3/16/20": 171
   },
   {
     "Province/State": "Victoria",
@@ -972,7 +993,8 @@ var confirmed=[
     "3/12/20": 21,
     "3/13/20": 36,
     "3/14/20": 49,
-    "3/15/20": 57
+    "3/15/20": 57,
+    "3/16/20": 71
   },
   {
     "Province/State": "Queensland",
@@ -1032,7 +1054,8 @@ var confirmed=[
     "3/12/20": 20,
     "3/13/20": 35,
     "3/14/20": 46,
-    "3/15/20": 61
+    "3/15/20": 61,
+    "3/16/20": 68
   },
   {
     "Province/State": "",
@@ -1092,7 +1115,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 5,
     "3/14/20": 7,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 7
   },
   {
     "Province/State": "",
@@ -1152,7 +1176,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 6,
     "3/14/20": 10,
-    "3/15/20": 18
+    "3/15/20": 18,
+    "3/16/20": 28
   },
   {
     "Province/State": "",
@@ -1212,7 +1237,8 @@ var confirmed=[
     "3/12/20": 2078,
     "3/13/20": 3675,
     "3/14/20": 4585,
-    "3/15/20": 5795
+    "3/15/20": 5795,
+    "3/16/20": 7272
   },
   {
     "Province/State": "",
@@ -1272,7 +1298,8 @@ var confirmed=[
     "3/12/20": 59,
     "3/13/20": 155,
     "3/14/20": 225,
-    "3/15/20": 244
+    "3/15/20": 244,
+    "3/16/20": 277
   },
   {
     "Province/State": "",
@@ -1332,7 +1359,8 @@ var confirmed=[
     "3/12/20": 85,
     "3/13/20": 85,
     "3/14/20": 85,
-    "3/15/20": 98
+    "3/15/20": 98,
+    "3/16/20": 98
   },
   {
     "Province/State": "",
@@ -1392,7 +1420,8 @@ var confirmed=[
     "3/12/20": 52,
     "3/13/20": 64,
     "3/14/20": 111,
-    "3/15/20": 140
+    "3/15/20": 140,
+    "3/16/20": 142
   },
   {
     "Province/State": "",
@@ -1452,7 +1481,8 @@ var confirmed=[
     "3/12/20": 73,
     "3/13/20": 82,
     "3/14/20": 102,
-    "3/15/20": 113
+    "3/15/20": 113,
+    "3/16/20": 119
   },
   {
     "Province/State": "",
@@ -1512,7 +1542,8 @@ var confirmed=[
     "3/12/20": 12462,
     "3/13/20": 17660,
     "3/14/20": 21157,
-    "3/15/20": 24747
+    "3/15/20": 24747,
+    "3/16/20": 27980
   },
   {
     "Province/State": "",
@@ -1572,7 +1603,8 @@ var confirmed=[
     "3/12/20": 599,
     "3/13/20": 814,
     "3/14/20": 961,
-    "3/15/20": 1022
+    "3/15/20": 1022,
+    "3/16/20": 1103
   },
   {
     "Province/State": "",
@@ -1632,7 +1664,8 @@ var confirmed=[
     "3/12/20": 2277,
     "3/13/20": 5232,
     "3/14/20": 6391,
-    "3/15/20": 7798
+    "3/15/20": 7798,
+    "3/16/20": 9942
   },
   {
     "Province/State": "South Australia",
@@ -1692,7 +1725,8 @@ var confirmed=[
     "3/12/20": 9,
     "3/13/20": 16,
     "3/14/20": 19,
-    "3/15/20": 20
+    "3/15/20": 20,
+    "3/16/20": 29
   },
   {
     "Province/State": "",
@@ -1752,7 +1786,8 @@ var confirmed=[
     "3/12/20": 314,
     "3/13/20": 559,
     "3/14/20": 689,
-    "3/15/20": 886
+    "3/15/20": 886,
+    "3/16/20": 1058
   },
   {
     "Province/State": "",
@@ -1812,7 +1847,8 @@ var confirmed=[
     "3/12/20": 67,
     "3/13/20": 80,
     "3/14/20": 109,
-    "3/15/20": 110
+    "3/15/20": 110,
+    "3/16/20": 150
   },
   {
     "Province/State": "From Diamond Princess",
@@ -1872,7 +1908,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -1932,7 +1969,8 @@ var confirmed=[
     "3/12/20": 61,
     "3/13/20": 77,
     "3/14/20": 93,
-    "3/15/20": 110
+    "3/15/20": 110,
+    "3/16/20": 99
   },
   {
     "Province/State": "",
@@ -1992,7 +2030,8 @@ var confirmed=[
     "3/12/20": 71,
     "3/13/20": 101,
     "3/14/20": 110,
-    "3/15/20": 116
+    "3/15/20": 116,
+    "3/16/20": 124
   },
   {
     "Province/State": "",
@@ -2052,7 +2091,8 @@ var confirmed=[
     "3/12/20": 18,
     "3/13/20": 19,
     "3/14/20": 19,
-    "3/15/20": 22
+    "3/15/20": 22,
+    "3/16/20": 22
   },
   {
     "Province/State": "",
@@ -2112,7 +2152,8 @@ var confirmed=[
     "3/12/20": 7,
     "3/13/20": 7,
     "3/14/20": 11,
-    "3/15/20": 16
+    "3/15/20": 16,
+    "3/16/20": 21
   },
   {
     "Province/State": "",
@@ -2172,7 +2213,8 @@ var confirmed=[
     "3/12/20": 195,
     "3/13/20": 189,
     "3/14/20": 210,
-    "3/15/20": 214
+    "3/15/20": 214,
+    "3/16/20": 214
   },
   {
     "Province/State": "",
@@ -2232,7 +2274,8 @@ var confirmed=[
     "3/12/20": 80,
     "3/13/20": 80,
     "3/14/20": 104,
-    "3/15/20": 112
+    "3/15/20": 112,
+    "3/16/20": 123
   },
   {
     "Province/State": "",
@@ -2292,7 +2335,8 @@ var confirmed=[
     "3/12/20": 24,
     "3/13/20": 26,
     "3/14/20": 37,
-    "3/15/20": 48
+    "3/15/20": 48,
+    "3/16/20": 54
   },
   {
     "Province/State": "",
@@ -2352,7 +2396,8 @@ var confirmed=[
     "3/12/20": 19,
     "3/13/20": 32,
     "3/14/20": 38,
-    "3/15/20": 49
+    "3/15/20": 49,
+    "3/16/20": 57
   },
   {
     "Province/State": "",
@@ -2412,7 +2457,8 @@ var confirmed=[
     "3/12/20": 652,
     "3/13/20": 1139,
     "3/14/20": 1359,
-    "3/15/20": 2200
+    "3/15/20": 2200,
+    "3/16/20": 2200
   },
   {
     "Province/State": "",
@@ -2472,7 +2518,8 @@ var confirmed=[
     "3/12/20": 302,
     "3/13/20": 504,
     "3/14/20": 655,
-    "3/15/20": 860
+    "3/15/20": 860,
+    "3/16/20": 1018
   },
   {
     "Province/State": "",
@@ -2532,7 +2579,8 @@ var confirmed=[
     "3/12/20": 131,
     "3/13/20": 161,
     "3/14/20": 193,
-    "3/15/20": 251
+    "3/15/20": 251,
+    "3/16/20": 255
   },
   {
     "Province/State": "",
@@ -2592,7 +2640,8 @@ var confirmed=[
     "3/12/20": 20,
     "3/13/20": 28,
     "3/14/20": 31,
-    "3/15/20": 53
+    "3/15/20": 53,
+    "3/16/20": 136
   },
   {
     "Province/State": "",
@@ -2652,7 +2701,8 @@ var confirmed=[
     "3/12/20": 52,
     "3/13/20": 151,
     "3/14/20": 151,
-    "3/15/20": 162
+    "3/15/20": 162,
+    "3/16/20": 200
   },
   {
     "Province/State": "",
@@ -2712,7 +2762,8 @@ var confirmed=[
     "3/12/20": 24,
     "3/13/20": 25,
     "3/14/20": 30,
-    "3/15/20": 33
+    "3/15/20": 33,
+    "3/16/20": 33
   },
   {
     "Province/State": "",
@@ -2772,7 +2823,8 @@ var confirmed=[
     "3/12/20": 99,
     "3/13/20": 190,
     "3/14/20": 228,
-    "3/15/20": 331
+    "3/15/20": 331,
+    "3/16/20": 331
   },
   {
     "Province/State": "",
@@ -2832,7 +2884,8 @@ var confirmed=[
     "3/12/20": 7,
     "3/13/20": 14,
     "3/14/20": 14,
-    "3/15/20": 14
+    "3/15/20": 14,
+    "3/16/20": 18
   },
   {
     "Province/State": "",
@@ -2892,7 +2945,8 @@ var confirmed=[
     "3/12/20": 702,
     "3/13/20": 996,
     "3/14/20": 1090,
-    "3/15/20": 1221
+    "3/15/20": 1221,
+    "3/16/20": 1333
   },
   {
     "Province/State": "",
@@ -2952,7 +3006,8 @@ var confirmed=[
     "3/12/20": 49,
     "3/13/20": 89,
     "3/14/20": 123,
-    "3/15/20": 131
+    "3/15/20": 131,
+    "3/16/20": 158
   },
   {
     "Province/State": "",
@@ -3012,67 +3067,8 @@ var confirmed=[
     "3/12/20": 16,
     "3/13/20": 79,
     "3/14/20": 115,
-    "3/15/20": 171
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Netherlands",
-    "Lat": 52.1326,
-    "Long": 5.2913,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 1,
-    "2/28/20": 1,
-    "2/29/20": 6,
-    "3/1/20": 10,
-    "3/2/20": 18,
-    "3/3/20": 24,
-    "3/4/20": 38,
-    "3/5/20": 82,
-    "3/6/20": 128,
-    "3/7/20": 188,
-    "3/8/20": 265,
-    "3/9/20": 321,
-    "3/10/20": 382,
-    "3/11/20": 503,
-    "3/12/20": 503,
-    "3/13/20": 804,
-    "3/14/20": 959,
-    "3/15/20": 1135
+    "3/15/20": 171,
+    "3/16/20": 205
   },
   {
     "Province/State": "",
@@ -3132,7 +3128,8 @@ var confirmed=[
     "3/12/20": 69,
     "3/13/20": 80,
     "3/14/20": 80,
-    "3/15/20": 101
+    "3/15/20": 101,
+    "3/16/20": 109
   },
   {
     "Province/State": "",
@@ -3192,7 +3189,8 @@ var confirmed=[
     "3/12/20": 12,
     "3/13/20": 27,
     "3/14/20": 27,
-    "3/15/20": 27
+    "3/15/20": 27,
+    "3/16/20": 36
   },
   {
     "Province/State": "",
@@ -3252,7 +3250,8 @@ var confirmed=[
     "3/12/20": 103,
     "3/13/20": 134,
     "3/14/20": 156,
-    "3/15/20": 171
+    "3/15/20": 171,
+    "3/16/20": 180
   },
   {
     "Province/State": "",
@@ -3312,7 +3311,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 6,
     "3/14/20": 8,
-    "3/15/20": 12
+    "3/15/20": 12,
+    "3/16/20": 17
   },
   {
     "Province/State": "",
@@ -3372,7 +3372,8 @@ var confirmed=[
     "3/12/20": 12,
     "3/13/20": 12,
     "3/14/20": 26,
-    "3/15/20": 41
+    "3/15/20": 41,
+    "3/16/20": 53
   },
   {
     "Province/State": "",
@@ -3432,7 +3433,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 5,
     "3/14/20": 6,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "",
@@ -3492,7 +3494,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Western Australia",
@@ -3552,7 +3555,8 @@ var confirmed=[
     "3/12/20": 9,
     "3/13/20": 14,
     "3/14/20": 17,
-    "3/15/20": 17
+    "3/15/20": 17,
+    "3/16/20": 28
   },
   {
     "Province/State": "",
@@ -3612,7 +3616,8 @@ var confirmed=[
     "3/12/20": 43,
     "3/13/20": 90,
     "3/14/20": 129,
-    "3/15/20": 129
+    "3/15/20": 129,
+    "3/16/20": 169
   },
   {
     "Province/State": "",
@@ -3672,7 +3677,8 @@ var confirmed=[
     "3/12/20": 19,
     "3/13/20": 34,
     "3/14/20": 51,
-    "3/15/20": 59
+    "3/15/20": 59,
+    "3/16/20": 77
   },
   {
     "Province/State": "",
@@ -3732,7 +3738,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 7
   },
   {
     "Province/State": "",
@@ -3792,7 +3799,8 @@ var confirmed=[
     "3/12/20": 262,
     "3/13/20": 320,
     "3/14/20": 337,
-    "3/15/20": 401
+    "3/15/20": 401,
+    "3/16/20": 439
   },
   {
     "Province/State": "",
@@ -3852,7 +3860,8 @@ var confirmed=[
     "3/12/20": 17,
     "3/13/20": 17,
     "3/14/20": 28,
-    "3/15/20": 28
+    "3/15/20": 28,
+    "3/16/20": 37
   },
   {
     "Province/State": "",
@@ -3912,7 +3921,8 @@ var confirmed=[
     "3/12/20": 11,
     "3/13/20": 15,
     "3/14/20": 15,
-    "3/15/20": 23
+    "3/15/20": 23,
+    "3/16/20": 15
   },
   {
     "Province/State": "",
@@ -3972,7 +3982,8 @@ var confirmed=[
     "3/12/20": 4,
     "3/13/20": 8,
     "3/14/20": 18,
-    "3/15/20": 26
+    "3/15/20": 26,
+    "3/16/20": 52
   },
   {
     "Province/State": "",
@@ -4032,7 +4043,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 5,
     "3/14/20": 11,
-    "3/15/20": 11
+    "3/15/20": 11,
+    "3/16/20": 11
   },
   {
     "Province/State": "",
@@ -4092,7 +4104,8 @@ var confirmed=[
     "3/12/20": 34,
     "3/13/20": 69,
     "3/14/20": 96,
-    "3/15/20": 117
+    "3/15/20": 117,
+    "3/16/20": 134
   },
   {
     "Province/State": "",
@@ -4152,7 +4165,8 @@ var confirmed=[
     "3/12/20": 59,
     "3/13/20": 112,
     "3/14/20": 169,
-    "3/15/20": 245
+    "3/15/20": 245,
+    "3/16/20": 331
   },
   {
     "Province/State": "",
@@ -4212,7 +4226,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "Tasmania",
@@ -4272,7 +4287,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 5,
     "3/14/20": 5,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 7
   },
   {
     "Province/State": "",
@@ -4332,7 +4348,8 @@ var confirmed=[
     "3/12/20": 10,
     "3/13/20": 17,
     "3/14/20": 26,
-    "3/15/20": 30
+    "3/15/20": 30,
+    "3/16/20": 34
   },
   {
     "Province/State": "",
@@ -4392,7 +4409,8 @@ var confirmed=[
     "3/12/20": 6,
     "3/13/20": 7,
     "3/14/20": 17,
-    "3/15/20": 28
+    "3/15/20": 28,
+    "3/16/20": 29
   },
   {
     "Province/State": "",
@@ -4452,7 +4470,8 @@ var confirmed=[
     "3/12/20": 45,
     "3/13/20": 86,
     "3/14/20": 103,
-    "3/15/20": 103
+    "3/15/20": 103,
+    "3/16/20": 118
   },
   {
     "Province/State": "",
@@ -4512,7 +4531,8 @@ var confirmed=[
     "3/12/20": 4,
     "3/13/20": 10,
     "3/14/20": 10,
-    "3/15/20": 24
+    "3/15/20": 24,
+    "3/16/20": 24
   },
   {
     "Province/State": "",
@@ -4572,7 +4592,8 @@ var confirmed=[
     "3/12/20": 19,
     "3/13/20": 31,
     "3/14/20": 34,
-    "3/15/20": 45
+    "3/15/20": 45,
+    "3/16/20": 56
   },
   {
     "Province/State": "",
@@ -4632,7 +4653,8 @@ var confirmed=[
     "3/12/20": 23,
     "3/13/20": 43,
     "3/14/20": 61,
-    "3/15/20": 74
+    "3/15/20": 74,
+    "3/16/20": 155
   },
   {
     "Province/State": "",
@@ -4692,7 +4714,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 17
   },
   {
     "Province/State": "",
@@ -4752,7 +4775,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 7
   },
   {
     "Province/State": "",
@@ -4812,7 +4836,8 @@ var confirmed=[
     "3/12/20": 13,
     "3/13/20": 19,
     "3/14/20": 30,
-    "3/15/20": 32
+    "3/15/20": 32,
+    "3/16/20": 39
   },
   {
     "Province/State": "Northern Territory",
@@ -4872,7 +4897,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -4932,7 +4958,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -4992,7 +5019,8 @@ var confirmed=[
     "3/12/20": 49,
     "3/13/20": 68,
     "3/14/20": 103,
-    "3/15/20": 119
+    "3/15/20": 119,
+    "3/16/20": 177
   },
   {
     "Province/State": "",
@@ -5052,7 +5080,8 @@ var confirmed=[
     "3/12/20": 7,
     "3/13/20": 16,
     "3/14/20": 18,
-    "3/15/20": 18
+    "3/15/20": 18,
+    "3/16/20": 20
   },
   {
     "Province/State": "",
@@ -5112,7 +5141,8 @@ var confirmed=[
     "3/12/20": 11,
     "3/13/20": 13,
     "3/14/20": 18,
-    "3/15/20": 24
+    "3/15/20": 24,
+    "3/16/20": 25
   },
   {
     "Province/State": "",
@@ -5172,7 +5202,8 @@ var confirmed=[
     "3/12/20": 89,
     "3/13/20": 141,
     "3/14/20": 181,
-    "3/15/20": 219
+    "3/15/20": 219,
+    "3/16/20": 253
   },
   {
     "Province/State": "",
@@ -5232,7 +5263,8 @@ var confirmed=[
     "3/12/20": 17,
     "3/13/20": 24,
     "3/14/20": 38,
-    "3/15/20": 51
+    "3/15/20": 51,
+    "3/16/20": 62
   },
   {
     "Province/State": "",
@@ -5292,7 +5324,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -5352,7 +5385,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -5412,7 +5446,8 @@ var confirmed=[
     "3/12/20": 9,
     "3/13/20": 13,
     "3/14/20": 22,
-    "3/15/20": 34
+    "3/15/20": 34,
+    "3/16/20": 54
   },
   {
     "Province/State": "",
@@ -5472,7 +5507,8 @@ var confirmed=[
     "3/12/20": 22,
     "3/13/20": 23,
     "3/14/20": 26,
-    "3/15/20": 27
+    "3/15/20": 27,
+    "3/16/20": 35
   },
   {
     "Province/State": "",
@@ -5532,7 +5568,8 @@ var confirmed=[
     "3/12/20": 15,
     "3/13/20": 28,
     "3/14/20": 38,
-    "3/15/20": 43
+    "3/15/20": 43,
+    "3/16/20": 86
   },
   {
     "Province/State": "",
@@ -5592,7 +5629,8 @@ var confirmed=[
     "3/12/20": 19,
     "3/13/20": 35,
     "3/14/20": 46,
-    "3/15/20": 48
+    "3/15/20": 48,
+    "3/16/20": 55
   },
   {
     "Province/State": "",
@@ -5652,7 +5690,8 @@ var confirmed=[
     "3/12/20": 16,
     "3/13/20": 32,
     "3/14/20": 44,
-    "3/15/20": 54
+    "3/15/20": 54,
+    "3/16/20": 63
   },
   {
     "Province/State": "",
@@ -5712,7 +5751,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -5772,7 +5812,8 @@ var confirmed=[
     "3/12/20": 6,
     "3/13/20": 12,
     "3/14/20": 18,
-    "3/15/20": 21
+    "3/15/20": 21,
+    "3/16/20": 30
   },
   {
     "Province/State": "",
@@ -5832,7 +5873,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 9,
-    "3/15/20": 9
+    "3/15/20": 9,
+    "3/16/20": 15
   },
   {
     "Province/State": "",
@@ -5892,7 +5934,8 @@ var confirmed=[
     "3/12/20": 7,
     "3/13/20": 23,
     "3/14/20": 41,
-    "3/15/20": 51
+    "3/15/20": 51,
+    "3/16/20": 52
   },
   {
     "Province/State": "",
@@ -5952,7 +5995,8 @@ var confirmed=[
     "3/12/20": 8,
     "3/13/20": 9,
     "3/14/20": 10,
-    "3/15/20": 13
+    "3/15/20": 13,
+    "3/16/20": 13
   },
   {
     "Province/State": "",
@@ -6012,7 +6056,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 8
   },
   {
     "Province/State": "",
@@ -6072,7 +6117,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 8
   },
   {
     "Province/State": "Ontario",
@@ -6132,7 +6178,8 @@ var confirmed=[
     "3/12/20": 42,
     "3/13/20": 74,
     "3/14/20": 79,
-    "3/15/20": 104
+    "3/15/20": 104,
+    "3/16/20": 177
   },
   {
     "Province/State": "Alberta",
@@ -6192,7 +6239,8 @@ var confirmed=[
     "3/12/20": 19,
     "3/13/20": 29,
     "3/14/20": 29,
-    "3/15/20": 39
+    "3/15/20": 39,
+    "3/16/20": 56
   },
   {
     "Province/State": "Quebec",
@@ -6252,7 +6300,8 @@ var confirmed=[
     "3/12/20": 9,
     "3/13/20": 17,
     "3/14/20": 17,
-    "3/15/20": 24
+    "3/15/20": 24,
+    "3/16/20": 50
   },
   {
     "Province/State": "",
@@ -6312,7 +6361,8 @@ var confirmed=[
     "3/12/20": 23,
     "3/13/20": 33,
     "3/14/20": 38,
-    "3/15/20": 42
+    "3/15/20": 42,
+    "3/16/20": 51
   },
   {
     "Province/State": "",
@@ -6372,7 +6422,8 @@ var confirmed=[
     "3/12/20": 6,
     "3/13/20": 14,
     "3/14/20": 26,
-    "3/15/20": 26
+    "3/15/20": 26,
+    "3/16/20": 33
   },
   {
     "Province/State": "",
@@ -6432,7 +6483,8 @@ var confirmed=[
     "3/12/20": 11,
     "3/13/20": 37,
     "3/14/20": 40,
-    "3/15/20": 50
+    "3/15/20": 50,
+    "3/16/20": 54
   },
   {
     "Province/State": "Washington",
@@ -6492,7 +6544,8 @@ var confirmed=[
     "3/12/20": 442,
     "3/13/20": 568,
     "3/14/20": 572,
-    "3/15/20": 643
+    "3/15/20": 643,
+    "3/16/20": 904
   },
   {
     "Province/State": "New York",
@@ -6552,7 +6605,8 @@ var confirmed=[
     "3/12/20": 328,
     "3/13/20": 421,
     "3/14/20": 525,
-    "3/15/20": 732
+    "3/15/20": 732,
+    "3/16/20": 967
   },
   {
     "Province/State": "California",
@@ -6612,7 +6666,8 @@ var confirmed=[
     "3/12/20": 221,
     "3/13/20": 282,
     "3/14/20": 340,
-    "3/15/20": 426
+    "3/15/20": 426,
+    "3/16/20": 557
   },
   {
     "Province/State": "Massachusetts",
@@ -6672,7 +6727,8 @@ var confirmed=[
     "3/12/20": 108,
     "3/13/20": 123,
     "3/14/20": 138,
-    "3/15/20": 164
+    "3/15/20": 164,
+    "3/16/20": 197
   },
   {
     "Province/State": "Diamond Princess",
@@ -6732,7 +6788,8 @@ var confirmed=[
     "3/12/20": 46,
     "3/13/20": 46,
     "3/14/20": 46,
-    "3/15/20": 46
+    "3/15/20": 46,
+    "3/16/20": 47
   },
   {
     "Province/State": "Grand Princess",
@@ -6792,7 +6849,8 @@ var confirmed=[
     "3/12/20": 21,
     "3/13/20": 21,
     "3/14/20": 21,
-    "3/15/20": 21
+    "3/15/20": 21,
+    "3/16/20": 20
   },
   {
     "Province/State": "Georgia",
@@ -6852,7 +6910,8 @@ var confirmed=[
     "3/12/20": 31,
     "3/13/20": 42,
     "3/14/20": 66,
-    "3/15/20": 99
+    "3/15/20": 99,
+    "3/16/20": 121
   },
   {
     "Province/State": "Colorado",
@@ -6912,7 +6971,8 @@ var confirmed=[
     "3/12/20": 45,
     "3/13/20": 49,
     "3/14/20": 101,
-    "3/15/20": 131
+    "3/15/20": 131,
+    "3/16/20": 160
   },
   {
     "Province/State": "Florida",
@@ -6972,7 +7032,8 @@ var confirmed=[
     "3/12/20": 35,
     "3/13/20": 50,
     "3/14/20": 76,
-    "3/15/20": 115
+    "3/15/20": 115,
+    "3/16/20": 155
   },
   {
     "Province/State": "New Jersey",
@@ -7032,7 +7093,8 @@ var confirmed=[
     "3/12/20": 29,
     "3/13/20": 29,
     "3/14/20": 69,
-    "3/15/20": 98
+    "3/15/20": 98,
+    "3/16/20": 178
   },
   {
     "Province/State": "Oregon",
@@ -7092,7 +7154,8 @@ var confirmed=[
     "3/12/20": 24,
     "3/13/20": 30,
     "3/14/20": 32,
-    "3/15/20": 36
+    "3/15/20": 36,
+    "3/16/20": 39
   },
   {
     "Province/State": "Texas",
@@ -7152,7 +7215,8 @@ var confirmed=[
     "3/12/20": 27,
     "3/13/20": 43,
     "3/14/20": 57,
-    "3/15/20": 72
+    "3/15/20": 72,
+    "3/16/20": 85
   },
   {
     "Province/State": "Illinois",
@@ -7212,7 +7276,8 @@ var confirmed=[
     "3/12/20": 32,
     "3/13/20": 46,
     "3/14/20": 64,
-    "3/15/20": 93
+    "3/15/20": 93,
+    "3/16/20": 105
   },
   {
     "Province/State": "Pennsylvania",
@@ -7272,7 +7337,8 @@ var confirmed=[
     "3/12/20": 22,
     "3/13/20": 41,
     "3/14/20": 47,
-    "3/15/20": 66
+    "3/15/20": 66,
+    "3/16/20": 77
   },
   {
     "Province/State": "Iowa",
@@ -7332,7 +7398,8 @@ var confirmed=[
     "3/12/20": 16,
     "3/13/20": 17,
     "3/14/20": 17,
-    "3/15/20": 18
+    "3/15/20": 18,
+    "3/16/20": 23
   },
   {
     "Province/State": "Maryland",
@@ -7392,7 +7459,8 @@ var confirmed=[
     "3/12/20": 12,
     "3/13/20": 18,
     "3/14/20": 26,
-    "3/15/20": 32
+    "3/15/20": 32,
+    "3/16/20": 41
   },
   {
     "Province/State": "North Carolina",
@@ -7452,7 +7520,8 @@ var confirmed=[
     "3/12/20": 15,
     "3/13/20": 17,
     "3/14/20": 24,
-    "3/15/20": 33
+    "3/15/20": 33,
+    "3/16/20": 38
   },
   {
     "Province/State": "South Carolina",
@@ -7512,7 +7581,8 @@ var confirmed=[
     "3/12/20": 12,
     "3/13/20": 13,
     "3/14/20": 19,
-    "3/15/20": 28
+    "3/15/20": 28,
+    "3/16/20": 33
   },
   {
     "Province/State": "Tennessee",
@@ -7572,7 +7642,8 @@ var confirmed=[
     "3/12/20": 18,
     "3/13/20": 26,
     "3/14/20": 32,
-    "3/15/20": 39
+    "3/15/20": 39,
+    "3/16/20": 52
   },
   {
     "Province/State": "Virginia",
@@ -7632,7 +7703,8 @@ var confirmed=[
     "3/12/20": 17,
     "3/13/20": 30,
     "3/14/20": 41,
-    "3/15/20": 45
+    "3/15/20": 45,
+    "3/16/20": 49
   },
   {
     "Province/State": "Arizona",
@@ -7692,7 +7764,8 @@ var confirmed=[
     "3/12/20": 9,
     "3/13/20": 9,
     "3/14/20": 12,
-    "3/15/20": 13
+    "3/15/20": 13,
+    "3/16/20": 18
   },
   {
     "Province/State": "Indiana",
@@ -7752,7 +7825,8 @@ var confirmed=[
     "3/12/20": 13,
     "3/13/20": 13,
     "3/14/20": 16,
-    "3/15/20": 20
+    "3/15/20": 20,
+    "3/16/20": 25
   },
   {
     "Province/State": "Kentucky",
@@ -7812,7 +7886,8 @@ var confirmed=[
     "3/12/20": 10,
     "3/13/20": 14,
     "3/14/20": 14,
-    "3/15/20": 20
+    "3/15/20": 20,
+    "3/16/20": 21
   },
   {
     "Province/State": "District of Columbia",
@@ -7872,7 +7947,8 @@ var confirmed=[
     "3/12/20": 10,
     "3/13/20": 10,
     "3/14/20": 10,
-    "3/15/20": 16
+    "3/15/20": 16,
+    "3/16/20": 22
   },
   {
     "Province/State": "Nevada",
@@ -7932,7 +8008,8 @@ var confirmed=[
     "3/12/20": 14,
     "3/13/20": 17,
     "3/14/20": 21,
-    "3/15/20": 24
+    "3/15/20": 24,
+    "3/16/20": 45
   },
   {
     "Province/State": "New Hampshire",
@@ -7992,7 +8069,8 @@ var confirmed=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 7,
-    "3/15/20": 13
+    "3/15/20": 13,
+    "3/16/20": 17
   },
   {
     "Province/State": "Minnesota",
@@ -8052,7 +8130,8 @@ var confirmed=[
     "3/12/20": 9,
     "3/13/20": 14,
     "3/14/20": 21,
-    "3/15/20": 35
+    "3/15/20": 35,
+    "3/16/20": 54
   },
   {
     "Province/State": "Nebraska",
@@ -8112,7 +8191,8 @@ var confirmed=[
     "3/12/20": 10,
     "3/13/20": 13,
     "3/14/20": 14,
-    "3/15/20": 17
+    "3/15/20": 17,
+    "3/16/20": 18
   },
   {
     "Province/State": "Ohio",
@@ -8172,7 +8252,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 13,
     "3/14/20": 26,
-    "3/15/20": 37
+    "3/15/20": 37,
+    "3/16/20": 50
   },
   {
     "Province/State": "Rhode Island",
@@ -8232,7 +8313,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 14,
     "3/14/20": 20,
-    "3/15/20": 20
+    "3/15/20": 20,
+    "3/16/20": 21
   },
   {
     "Province/State": "Wisconsin",
@@ -8292,7 +8374,8 @@ var confirmed=[
     "3/12/20": 8,
     "3/13/20": 19,
     "3/14/20": 27,
-    "3/15/20": 32
+    "3/15/20": 32,
+    "3/16/20": 47
   },
   {
     "Province/State": "Connecticut",
@@ -8352,7 +8435,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 11,
     "3/14/20": 22,
-    "3/15/20": 24
+    "3/15/20": 24,
+    "3/16/20": 30
   },
   {
     "Province/State": "Hawaii",
@@ -8412,7 +8496,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 4,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 7
   },
   {
     "Province/State": "Oklahoma",
@@ -8472,7 +8557,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 4,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 10
   },
   {
     "Province/State": "Utah",
@@ -8532,7 +8618,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 9,
     "3/14/20": 10,
-    "3/15/20": 28
+    "3/15/20": 28,
+    "3/16/20": 39
   },
   {
     "Province/State": "",
@@ -8592,7 +8679,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 15
   },
   {
     "Province/State": "",
@@ -8652,7 +8740,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -8712,7 +8801,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -8772,7 +8862,8 @@ var confirmed=[
     "3/12/20": 11,
     "3/13/20": 27,
     "3/14/20": 36,
-    "3/15/20": 43
+    "3/15/20": 43,
+    "3/16/20": 55
   },
   {
     "Province/State": "Kansas",
@@ -8832,7 +8923,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 5,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 11
   },
   {
     "Province/State": "Louisiana",
@@ -8892,7 +8984,8 @@ var confirmed=[
     "3/12/20": 19,
     "3/13/20": 36,
     "3/14/20": 77,
-    "3/15/20": 91
+    "3/15/20": 91,
+    "3/16/20": 136
   },
   {
     "Province/State": "Missouri",
@@ -8952,7 +9045,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 4,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 6
   },
   {
     "Province/State": "Vermont",
@@ -9012,7 +9106,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 5,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 12
   },
   {
     "Province/State": "Alaska",
@@ -9072,7 +9167,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Arkansas",
@@ -9132,7 +9228,8 @@ var confirmed=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 12,
-    "3/15/20": 16
+    "3/15/20": 16,
+    "3/16/20": 22
   },
   {
     "Province/State": "Delaware",
@@ -9192,7 +9289,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 4,
     "3/14/20": 6,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 8
   },
   {
     "Province/State": "Idaho",
@@ -9252,7 +9350,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 2,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 5
   },
   {
     "Province/State": "Maine",
@@ -9312,7 +9411,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 3,
-    "3/15/20": 12
+    "3/15/20": 12,
+    "3/16/20": 17
   },
   {
     "Province/State": "Michigan",
@@ -9372,7 +9472,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 16,
     "3/14/20": 25,
-    "3/15/20": 33
+    "3/15/20": 33,
+    "3/16/20": 53
   },
   {
     "Province/State": "Mississippi",
@@ -9432,7 +9533,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 6,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 13
   },
   {
     "Province/State": "Montana",
@@ -9492,7 +9594,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 5,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 7
   },
   {
     "Province/State": "New Mexico",
@@ -9552,7 +9655,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 10,
     "3/14/20": 10,
-    "3/15/20": 13
+    "3/15/20": 13,
+    "3/16/20": 17
   },
   {
     "Province/State": "North Dakota",
@@ -9612,7 +9716,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "South Dakota",
@@ -9672,7 +9777,8 @@ var confirmed=[
     "3/12/20": 8,
     "3/13/20": 8,
     "3/14/20": 9,
-    "3/15/20": 9
+    "3/15/20": 9,
+    "3/16/20": 10
   },
   {
     "Province/State": "West Virginia",
@@ -9732,7 +9838,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wyoming",
@@ -9792,7 +9899,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 2,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "Hubei",
@@ -9852,7 +9960,8 @@ var confirmed=[
     "3/12/20": 67781,
     "3/13/20": 67786,
     "3/14/20": 67790,
-    "3/15/20": 67794
+    "3/15/20": 67794,
+    "3/16/20": 67798
   },
   {
     "Province/State": "",
@@ -9912,7 +10021,8 @@ var confirmed=[
     "3/12/20": 10075,
     "3/13/20": 11364,
     "3/14/20": 12729,
-    "3/15/20": 13938
+    "3/15/20": 13938,
+    "3/16/20": 14991
   },
   {
     "Province/State": "",
@@ -9972,7 +10082,8 @@ var confirmed=[
     "3/12/20": 7869,
     "3/13/20": 7979,
     "3/14/20": 8086,
-    "3/15/20": 8162
+    "3/15/20": 8162,
+    "3/16/20": 8236
   },
   {
     "Province/State": "France",
@@ -10032,7 +10143,8 @@ var confirmed=[
     "3/12/20": 2281,
     "3/13/20": 3661,
     "3/14/20": 4469,
-    "3/15/20": 4499
+    "3/15/20": 4499,
+    "3/16/20": 6633
   },
   {
     "Province/State": "Guangdong",
@@ -10092,7 +10204,8 @@ var confirmed=[
     "3/12/20": 1356,
     "3/13/20": 1356,
     "3/14/20": 1356,
-    "3/15/20": 1360
+    "3/15/20": 1360,
+    "3/16/20": 1361
   },
   {
     "Province/State": "Henan",
@@ -10152,7 +10265,8 @@ var confirmed=[
     "3/12/20": 1273,
     "3/13/20": 1273,
     "3/14/20": 1273,
-    "3/15/20": 1273
+    "3/15/20": 1273,
+    "3/16/20": 1273
   },
   {
     "Province/State": "Zhejiang",
@@ -10212,7 +10326,8 @@ var confirmed=[
     "3/12/20": 1215,
     "3/13/20": 1215,
     "3/14/20": 1227,
-    "3/15/20": 1231
+    "3/15/20": 1231,
+    "3/16/20": 1231
   },
   {
     "Province/State": "Hunan",
@@ -10272,7 +10387,8 @@ var confirmed=[
     "3/12/20": 1018,
     "3/13/20": 1018,
     "3/14/20": 1018,
-    "3/15/20": 1018
+    "3/15/20": 1018,
+    "3/16/20": 1018
   },
   {
     "Province/State": "Anhui",
@@ -10332,7 +10448,8 @@ var confirmed=[
     "3/12/20": 990,
     "3/13/20": 990,
     "3/14/20": 990,
-    "3/15/20": 990
+    "3/15/20": 990,
+    "3/16/20": 990
   },
   {
     "Province/State": "Jiangxi",
@@ -10392,7 +10509,8 @@ var confirmed=[
     "3/12/20": 935,
     "3/13/20": 935,
     "3/14/20": 935,
-    "3/15/20": 935
+    "3/15/20": 935,
+    "3/16/20": 935
   },
   {
     "Province/State": "Shandong",
@@ -10452,7 +10570,8 @@ var confirmed=[
     "3/12/20": 760,
     "3/13/20": 760,
     "3/14/20": 760,
-    "3/15/20": 760
+    "3/15/20": 760,
+    "3/16/20": 760
   },
   {
     "Province/State": "Diamond Princess",
@@ -10512,7 +10631,8 @@ var confirmed=[
     "3/12/20": 696,
     "3/13/20": 696,
     "3/14/20": 696,
-    "3/15/20": 696
+    "3/15/20": 696,
+    "3/16/20": 696
   },
   {
     "Province/State": "Jiangsu",
@@ -10572,7 +10692,8 @@ var confirmed=[
     "3/12/20": 631,
     "3/13/20": 631,
     "3/14/20": 631,
-    "3/15/20": 631
+    "3/15/20": 631,
+    "3/16/20": 631
   },
   {
     "Province/State": "Chongqing",
@@ -10632,7 +10753,8 @@ var confirmed=[
     "3/12/20": 576,
     "3/13/20": 576,
     "3/14/20": 576,
-    "3/15/20": 576
+    "3/15/20": 576,
+    "3/16/20": 576
   },
   {
     "Province/State": "Sichuan",
@@ -10692,7 +10814,8 @@ var confirmed=[
     "3/12/20": 539,
     "3/13/20": 539,
     "3/14/20": 539,
-    "3/15/20": 539
+    "3/15/20": 539,
+    "3/16/20": 539
   },
   {
     "Province/State": "Heilongjiang",
@@ -10752,7 +10875,8 @@ var confirmed=[
     "3/12/20": 482,
     "3/13/20": 482,
     "3/14/20": 482,
-    "3/15/20": 482
+    "3/15/20": 482,
+    "3/16/20": 482
   },
   {
     "Province/State": "Denmark",
@@ -10812,7 +10936,8 @@ var confirmed=[
     "3/12/20": 615,
     "3/13/20": 801,
     "3/14/20": 827,
-    "3/15/20": 864
+    "3/15/20": 864,
+    "3/16/20": 914
   },
   {
     "Province/State": "Beijing",
@@ -10872,7 +10997,8 @@ var confirmed=[
     "3/12/20": 435,
     "3/13/20": 436,
     "3/14/20": 437,
-    "3/15/20": 442
+    "3/15/20": 442,
+    "3/16/20": 452
   },
   {
     "Province/State": "Shanghai",
@@ -10932,7 +11058,8 @@ var confirmed=[
     "3/12/20": 344,
     "3/13/20": 346,
     "3/14/20": 353,
-    "3/15/20": 353
+    "3/15/20": 353,
+    "3/16/20": 355
   },
   {
     "Province/State": "Hebei",
@@ -10992,7 +11119,8 @@ var confirmed=[
     "3/12/20": 318,
     "3/13/20": 318,
     "3/14/20": 318,
-    "3/15/20": 318
+    "3/15/20": 318,
+    "3/16/20": 318
   },
   {
     "Province/State": "Fujian",
@@ -11052,7 +11180,8 @@ var confirmed=[
     "3/12/20": 296,
     "3/13/20": 296,
     "3/14/20": 296,
-    "3/15/20": 296
+    "3/15/20": 296,
+    "3/16/20": 296
   },
   {
     "Province/State": "Guangxi",
@@ -11112,7 +11241,8 @@ var confirmed=[
     "3/12/20": 252,
     "3/13/20": 252,
     "3/14/20": 252,
-    "3/15/20": 252
+    "3/15/20": 252,
+    "3/16/20": 252
   },
   {
     "Province/State": "Shaanxi",
@@ -11172,7 +11302,8 @@ var confirmed=[
     "3/12/20": 245,
     "3/13/20": 245,
     "3/14/20": 245,
-    "3/15/20": 245
+    "3/15/20": 245,
+    "3/16/20": 245
   },
   {
     "Province/State": "Yunnan",
@@ -11232,7 +11363,8 @@ var confirmed=[
     "3/12/20": 174,
     "3/13/20": 174,
     "3/14/20": 174,
-    "3/15/20": 174
+    "3/15/20": 174,
+    "3/16/20": 176
   },
   {
     "Province/State": "Hainan",
@@ -11292,7 +11424,8 @@ var confirmed=[
     "3/12/20": 168,
     "3/13/20": 168,
     "3/14/20": 168,
-    "3/15/20": 168
+    "3/15/20": 168,
+    "3/16/20": 168
   },
   {
     "Province/State": "Guizhou",
@@ -11352,7 +11485,8 @@ var confirmed=[
     "3/12/20": 146,
     "3/13/20": 146,
     "3/14/20": 146,
-    "3/15/20": 146
+    "3/15/20": 146,
+    "3/16/20": 146
   },
   {
     "Province/State": "Tianjin",
@@ -11412,7 +11546,8 @@ var confirmed=[
     "3/12/20": 136,
     "3/13/20": 136,
     "3/14/20": 136,
-    "3/15/20": 136
+    "3/15/20": 136,
+    "3/16/20": 136
   },
   {
     "Province/State": "Shanxi",
@@ -11472,7 +11607,8 @@ var confirmed=[
     "3/12/20": 133,
     "3/13/20": 133,
     "3/14/20": 133,
-    "3/15/20": 133
+    "3/15/20": 133,
+    "3/16/20": 133
   },
   {
     "Province/State": "Gansu",
@@ -11532,7 +11668,8 @@ var confirmed=[
     "3/12/20": 127,
     "3/13/20": 127,
     "3/14/20": 129,
-    "3/15/20": 133
+    "3/15/20": 133,
+    "3/16/20": 133
   },
   {
     "Province/State": "Hong Kong",
@@ -11592,7 +11729,8 @@ var confirmed=[
     "3/12/20": 129,
     "3/13/20": 134,
     "3/14/20": 140,
-    "3/15/20": 145
+    "3/15/20": 145,
+    "3/16/20": 155
   },
   {
     "Province/State": "Liaoning",
@@ -11652,7 +11790,8 @@ var confirmed=[
     "3/12/20": 125,
     "3/13/20": 125,
     "3/14/20": 125,
-    "3/15/20": 125
+    "3/15/20": 125,
+    "3/16/20": 125
   },
   {
     "Province/State": "Jilin",
@@ -11712,7 +11851,8 @@ var confirmed=[
     "3/12/20": 93,
     "3/13/20": 93,
     "3/14/20": 93,
-    "3/15/20": 93
+    "3/15/20": 93,
+    "3/16/20": 93
   },
   {
     "Province/State": "",
@@ -11772,7 +11912,8 @@ var confirmed=[
     "3/12/20": 94,
     "3/13/20": 141,
     "3/14/20": 189,
-    "3/15/20": 253
+    "3/15/20": 253,
+    "3/16/20": 298
   },
   {
     "Province/State": "Xinjiang",
@@ -11832,7 +11973,8 @@ var confirmed=[
     "3/12/20": 76,
     "3/13/20": 76,
     "3/14/20": 76,
-    "3/15/20": 76
+    "3/15/20": 76,
+    "3/16/20": 76
   },
   {
     "Province/State": "Inner Mongolia",
@@ -11892,7 +12034,8 @@ var confirmed=[
     "3/12/20": 75,
     "3/13/20": 75,
     "3/14/20": 75,
-    "3/15/20": 75
+    "3/15/20": 75,
+    "3/16/20": 75
   },
   {
     "Province/State": "Ningxia",
@@ -11952,7 +12095,8 @@ var confirmed=[
     "3/12/20": 75,
     "3/13/20": 75,
     "3/14/20": 75,
-    "3/15/20": 75
+    "3/15/20": 75,
+    "3/16/20": 75
   },
   {
     "Province/State": "",
@@ -12012,7 +12156,8 @@ var confirmed=[
     "3/12/20": 49,
     "3/13/20": 50,
     "3/14/20": 53,
-    "3/15/20": 59
+    "3/15/20": 59,
+    "3/16/20": 67
   },
   {
     "Province/State": "",
@@ -12072,7 +12217,8 @@ var confirmed=[
     "3/12/20": 39,
     "3/13/20": 47,
     "3/14/20": 53,
-    "3/15/20": 56
+    "3/15/20": 56,
+    "3/16/20": 61
   },
   {
     "Province/State": "",
@@ -12132,7 +12278,8 @@ var confirmed=[
     "3/12/20": 28,
     "3/13/20": 45,
     "3/14/20": 59,
-    "3/15/20": 63
+    "3/15/20": 63,
+    "3/16/20": 90
   },
   {
     "Province/State": "Qinghai",
@@ -12192,7 +12339,8 @@ var confirmed=[
     "3/12/20": 18,
     "3/13/20": 18,
     "3/14/20": 18,
-    "3/15/20": 18
+    "3/15/20": 18,
+    "3/16/20": 18
   },
   {
     "Province/State": "Macau",
@@ -12252,7 +12400,8 @@ var confirmed=[
     "3/12/20": 10,
     "3/13/20": 10,
     "3/14/20": 10,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 11
   },
   {
     "Province/State": "",
@@ -12312,7 +12461,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 6,
     "3/14/20": 12,
-    "3/15/20": 23
+    "3/15/20": 23,
+    "3/16/20": 23
   },
   {
     "Province/State": "",
@@ -12372,7 +12522,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 3,
     "3/14/20": 10,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 11
   },
   {
     "Province/State": "Faroe Islands",
@@ -12432,7 +12583,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 3,
     "3/14/20": 9,
-    "3/15/20": 11
+    "3/15/20": 11,
+    "3/16/20": 18
   },
   {
     "Province/State": "St Martin",
@@ -12492,7 +12644,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -12552,7 +12705,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 6
   },
   {
     "Province/State": "Channel Islands",
@@ -12612,7 +12766,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 6
   },
   {
     "Province/State": "New Brunswick",
@@ -12672,7 +12827,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 6
   },
   {
     "Province/State": "Tibet",
@@ -12732,7 +12888,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -12792,7 +12949,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -12852,7 +13010,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Saint Barthelemy",
@@ -12912,7 +13071,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -12972,7 +13132,8 @@ var confirmed=[
     "3/12/20": 2,
     "3/13/20": 8,
     "3/14/20": 8,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 10
   },
   {
     "Province/State": "",
@@ -13032,7 +13193,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 5,
     "3/14/20": 6,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 9
   },
   {
     "Province/State": "",
@@ -13092,7 +13254,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 5,
     "3/14/20": 5,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 18
   },
   {
     "Province/State": "Gibraltar",
@@ -13152,7 +13315,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Kitsap, WA",
@@ -13212,7 +13376,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Solano, CA",
@@ -13272,7 +13437,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Cruz, CA",
@@ -13332,7 +13498,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Napa, CA",
@@ -13392,7 +13559,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ventura, CA",
@@ -13452,7 +13620,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Worcester, MA",
@@ -13512,7 +13681,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gwinnett, GA",
@@ -13572,7 +13742,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "DeKalb, GA",
@@ -13632,7 +13803,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Floyd, GA",
@@ -13692,7 +13864,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fayette, GA",
@@ -13752,7 +13925,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gregg, TX",
@@ -13812,7 +13986,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Monmouth, NJ",
@@ -13872,7 +14047,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Burlington, NJ",
@@ -13932,7 +14108,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Camden, NJ",
@@ -13992,7 +14169,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Passaic, NJ",
@@ -14052,7 +14230,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Union, NJ",
@@ -14112,7 +14291,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Eagle, CO",
@@ -14172,7 +14352,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Larimer, CO",
@@ -14232,7 +14413,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arapahoe, CO",
@@ -14292,7 +14474,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gunnison, CO",
@@ -14352,7 +14535,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kane, IL",
@@ -14412,7 +14596,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Monroe, PA",
@@ -14472,7 +14657,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Philadelphia, PA",
@@ -14532,7 +14718,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Norfolk, VA",
@@ -14592,7 +14779,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arlington, VA",
@@ -14652,7 +14840,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Spotsylvania, VA",
@@ -14712,7 +14901,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Loudoun, VA",
@@ -14772,7 +14962,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Prince George's, MD",
@@ -14832,7 +15023,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pottawattamie, IA",
@@ -14892,7 +15084,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Camden, NC",
@@ -14952,7 +15145,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pima, AZ",
@@ -15012,7 +15206,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Noble, IN",
@@ -15072,7 +15267,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Adams, IN",
@@ -15132,7 +15328,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Boone, IN",
@@ -15192,7 +15389,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Dane, WI",
@@ -15252,7 +15450,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pierce, WI",
@@ -15312,7 +15511,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cuyahoga, OH",
@@ -15372,7 +15572,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Weber, UT",
@@ -15432,7 +15633,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bennington County, VT",
@@ -15492,7 +15694,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Carver County, MN",
@@ -15552,7 +15755,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charlotte County, FL",
@@ -15612,7 +15816,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cherokee County, GA",
@@ -15672,7 +15877,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Collin County, TX",
@@ -15732,7 +15938,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson County, KY",
@@ -15792,7 +15999,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson Parish, LA",
@@ -15852,7 +16060,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Shasta County, CA",
@@ -15912,7 +16121,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Spartanburg County, SC",
@@ -15972,7 +16182,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harrison County, KY",
@@ -16032,7 +16243,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson County, IA",
@@ -16092,7 +16304,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Berkshire County, MA",
@@ -16152,7 +16365,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davidson County, TN",
@@ -16212,7 +16426,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, OR",
@@ -16272,7 +16487,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fresno County, CA",
@@ -16332,7 +16548,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harford County, MD",
@@ -16392,7 +16609,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hendricks County, IN",
@@ -16452,7 +16670,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hudson County, NJ",
@@ -16512,7 +16731,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson County, KS",
@@ -16572,7 +16792,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kittitas County, WA",
@@ -16632,7 +16853,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Manatee County, FL",
@@ -16692,7 +16914,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marion County, OR",
@@ -16752,7 +16975,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Okaloosa County, FL",
@@ -16812,7 +17036,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Polk County, GA",
@@ -16872,7 +17097,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Riverside County, CA",
@@ -16932,7 +17158,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Shelby County, TN",
@@ -16992,7 +17219,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St. Louis County, MO",
@@ -17052,7 +17280,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Suffolk County, NY",
@@ -17112,7 +17341,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ulster County, NY",
@@ -17172,7 +17402,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Volusia County, FL",
@@ -17232,7 +17463,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fairfax County, VA",
@@ -17292,7 +17524,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rockingham County, NH",
@@ -17352,7 +17585,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington, D.C.",
@@ -17412,7 +17646,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery County, PA",
@@ -17472,7 +17707,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alameda County, CA",
@@ -17532,7 +17768,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Broward County, FL",
@@ -17592,7 +17829,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lee County, FL",
@@ -17652,7 +17890,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pinal County, AZ",
@@ -17712,7 +17951,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rockland County, NY",
@@ -17772,7 +18012,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saratoga County, NY",
@@ -17832,7 +18073,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charleston County, SC",
@@ -17892,7 +18134,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Clark County, WA",
@@ -17952,7 +18195,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cobb County, GA",
@@ -18012,7 +18256,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davis County, UT",
@@ -18072,7 +18317,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "El Paso County, CO",
@@ -18132,7 +18378,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Honolulu County, HI",
@@ -18192,7 +18439,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jackson County, OR",
@@ -18252,7 +18500,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson County, WA",
@@ -18312,7 +18561,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kershaw County, SC",
@@ -18372,7 +18622,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Klamath County, OR",
@@ -18432,7 +18683,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Madera County, CA",
@@ -18492,7 +18744,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pierce County, WA",
@@ -18552,7 +18805,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tulsa County, OK",
@@ -18612,7 +18866,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, CO",
@@ -18672,7 +18927,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Providence County, RI",
@@ -18732,7 +18988,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Chatham County, NC",
@@ -18792,7 +19049,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Delaware County, PA",
@@ -18852,7 +19110,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, NE",
@@ -18912,7 +19171,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fayette County, KY",
@@ -18972,7 +19232,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marion County, IN",
@@ -19032,7 +19293,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Middlesex County, MA",
@@ -19092,7 +19354,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nassau County, NY",
@@ -19152,7 +19415,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ramsey County, MN",
@@ -19212,7 +19476,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washoe County, NV",
@@ -19272,7 +19537,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wayne County, PA",
@@ -19332,7 +19598,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Yolo County, CA",
@@ -19392,7 +19659,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Clara County, CA",
@@ -19452,7 +19720,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Clark County, NV",
@@ -19512,7 +19781,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fort Bend County, TX",
@@ -19572,7 +19842,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grant County, WA",
@@ -19632,7 +19903,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Rosa County, FL",
@@ -19692,7 +19964,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Williamson County, TN",
@@ -19752,7 +20025,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New York County, NY",
@@ -19812,7 +20086,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery County, MD",
@@ -19872,7 +20147,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Suffolk County, MA",
@@ -19932,7 +20208,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Denver County, CO",
@@ -19992,7 +20269,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Summit County, CO",
@@ -20052,7 +20330,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bergen County, NJ",
@@ -20112,7 +20391,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harris County, TX",
@@ -20172,7 +20452,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Francisco County, CA",
@@ -20232,7 +20513,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Contra Costa County, CA",
@@ -20292,7 +20574,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Orange County, CA",
@@ -20352,7 +20635,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Norfolk County, MA",
@@ -20412,7 +20696,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maricopa County, AZ",
@@ -20472,7 +20757,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wake County, NC",
@@ -20532,7 +20818,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Westchester County, NY",
@@ -20592,7 +20879,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grafton County, NH",
@@ -20652,7 +20940,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hillsborough, FL",
@@ -20712,7 +21001,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Placer County, CA",
@@ -20772,7 +21062,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Mateo, CA",
@@ -20832,7 +21123,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sonoma County, CA",
@@ -20892,7 +21184,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Umatilla, OR",
@@ -20952,7 +21245,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fulton County, GA",
@@ -21012,7 +21306,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington County, OR",
@@ -21072,7 +21367,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Snohomish County, WA",
@@ -21132,7 +21428,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Humboldt County, CA",
@@ -21192,7 +21489,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sacramento County, CA",
@@ -21252,7 +21550,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Diego County, CA",
@@ -21312,7 +21611,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Benito, CA",
@@ -21372,7 +21672,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Los Angeles, CA",
@@ -21432,7 +21733,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "King County, WA",
@@ -21492,7 +21794,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cook County, IL",
@@ -21552,7 +21855,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Skagit, WA",
@@ -21612,7 +21916,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Thurston, WA",
@@ -21672,7 +21977,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Island, WA",
@@ -21732,7 +22038,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Whatcom, WA",
@@ -21792,7 +22099,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marin, CA",
@@ -21852,7 +22160,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Calaveras, CA",
@@ -21912,7 +22221,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Stanislaus, CA",
@@ -21972,7 +22282,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Joaquin, CA",
@@ -22032,7 +22343,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Essex, MA",
@@ -22092,7 +22404,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charlton, GA",
@@ -22152,7 +22465,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Collier, FL",
@@ -22212,7 +22526,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pinellas, FL",
@@ -22272,7 +22587,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alachua, FL",
@@ -22332,7 +22648,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nassau, FL",
@@ -22392,7 +22709,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pasco, FL",
@@ -22452,7 +22770,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Dallas, TX",
@@ -22512,7 +22831,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tarrant, TX",
@@ -22572,7 +22892,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery, TX",
@@ -22632,7 +22953,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Middlesex, NJ",
@@ -22692,7 +23014,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson, CO",
@@ -22752,7 +23075,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Multnomah, OR",
@@ -22812,7 +23136,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Polk, OR",
@@ -22872,7 +23197,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Deschutes, OR",
@@ -22932,7 +23258,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "McHenry, IL",
@@ -22992,7 +23319,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lake, IL",
@@ -23052,7 +23380,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bucks, PA",
@@ -23112,7 +23441,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hanover, VA",
@@ -23172,7 +23502,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lancaster, SC",
@@ -23232,7 +23563,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sullivan, TN",
@@ -23292,7 +23624,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson, IN",
@@ -23352,7 +23685,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Howard, IN",
@@ -23412,7 +23746,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St. Joseph, IN",
@@ -23472,7 +23807,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Knox, NE",
@@ -23532,7 +23868,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Stark, OH",
@@ -23592,7 +23929,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Anoka, MN",
@@ -23652,7 +23990,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Olmsted, MN",
@@ -23712,7 +24051,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Summit, UT",
@@ -23772,7 +24112,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fairfield, CT",
@@ -23832,7 +24173,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Litchfield, CT",
@@ -23892,7 +24234,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Orleans, LA",
@@ -23952,7 +24295,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pennington, SD",
@@ -24012,7 +24356,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Beadle, SD",
@@ -24072,7 +24417,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charles Mix, SD",
@@ -24132,7 +24478,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davison, SD",
@@ -24192,7 +24539,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Minnehaha, SD",
@@ -24252,7 +24600,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bon Homme, SD",
@@ -24312,7 +24661,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Socorro, NM",
@@ -24372,7 +24722,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bernalillo, NM",
@@ -24432,7 +24783,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Oakland, MI",
@@ -24492,7 +24844,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wayne, MI",
@@ -24552,7 +24905,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Castle, DE",
@@ -24612,7 +24966,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -24672,7 +25027,8 @@ var confirmed=[
     "3/12/20": 3,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -24732,7 +25088,8 @@ var confirmed=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "Australian Capital Territory",
@@ -24792,7 +25149,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "United Kingdom",
@@ -24852,7 +25210,8 @@ var confirmed=[
     "3/12/20": 456,
     "3/13/20": 798,
     "3/14/20": 1140,
-    "3/15/20": 1140
+    "3/15/20": 1140,
+    "3/16/20": 1543
   },
   {
     "Province/State": "",
@@ -24912,7 +25271,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 4,
     "3/14/20": 6,
-    "3/15/20": 9
+    "3/15/20": 9,
+    "3/16/20": 10
   },
   {
     "Province/State": "French Polynesia",
@@ -24972,67 +25332,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Cayman Islands",
-    "Lat": 19.3133,
-    "Long": -81.2546,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 1,
-    "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -25092,7 +25393,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 6
   },
   {
     "Province/State": "Manitoba",
@@ -25152,7 +25454,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 7
   },
   {
     "Province/State": "Saskatchewan",
@@ -25212,7 +25515,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 7
   },
   {
     "Province/State": "",
@@ -25272,7 +25576,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 5
   },
   {
     "Province/State": "",
@@ -25332,7 +25637,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -25392,7 +25698,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -25452,7 +25759,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Grand Princess",
@@ -25512,7 +25820,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -25572,7 +25881,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -25632,7 +25942,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Alabama",
@@ -25692,7 +26003,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 5,
     "3/14/20": 6,
-    "3/15/20": 12
+    "3/15/20": 12,
+    "3/16/20": 29
   },
   {
     "Province/State": "",
@@ -25752,7 +26064,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 8
   },
   {
     "Province/State": "",
@@ -25812,7 +26125,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 3,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "Puerto Rico",
@@ -25872,7 +26186,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 3,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 5
   },
   {
     "Province/State": "",
@@ -25932,7 +26247,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -25992,7 +26308,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -26052,7 +26369,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -26112,7 +26430,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -26172,67 +26491,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 10
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Curacao",
-    "Lat": 12.1696,
-    "Long": -68.99,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 10,
+    "3/16/20": 17
   },
   {
     "Province/State": "",
@@ -26292,7 +26552,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -26352,7 +26613,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -26412,7 +26674,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -26472,7 +26735,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -26532,7 +26796,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -26592,7 +26857,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 5
   },
   {
     "Province/State": "",
@@ -26652,7 +26918,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -26712,7 +26979,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -26772,67 +27040,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
-  },
-  {
-    "Province/State": "Virgin Islands, U.S.",
-    "Country/Region": "US",
-    "Lat": 18.3358,
-    "Long": -64.8963,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -26892,7 +27101,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "French Guiana",
@@ -26952,7 +27162,8 @@ var confirmed=[
     "3/12/20": 5,
     "3/13/20": 5,
     "3/14/20": 5,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 5
   },
   {
     "Province/State": "Guam",
@@ -27012,7 +27223,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -27072,7 +27284,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Newfoundland and Labrador",
@@ -27132,7 +27345,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Prince Edward Island",
@@ -27192,7 +27406,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -27252,7 +27467,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -27312,7 +27528,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -27372,7 +27589,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Mayotte",
@@ -27432,7 +27650,8 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -27492,7 +27711,1045 @@ var confirmed=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 6
+  },
+  {
+    "Province/State": "Netherlands",
+    "Country/Region": "Netherlands",
+    "Lat": 52.1326,
+    "Long": 5.2913,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 1,
+    "2/28/20": 1,
+    "2/29/20": 6,
+    "3/1/20": 10,
+    "3/2/20": 18,
+    "3/3/20": 24,
+    "3/4/20": 38,
+    "3/5/20": 82,
+    "3/6/20": 128,
+    "3/7/20": 188,
+    "3/8/20": 265,
+    "3/9/20": 321,
+    "3/10/20": 382,
+    "3/11/20": 503,
+    "3/12/20": 503,
+    "3/13/20": 804,
+    "3/14/20": 959,
+    "3/15/20": 1135,
+    "3/16/20": 1413
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "French Guiana",
+    "Lat": 3.9339,
+    "Long": -53.1258,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 11
+  },
+  {
+    "Province/State": "Nova Scotia",
+    "Country/Region": "Canada",
+    "Lat": 44.682,
+    "Long": -63.7443,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 5
+  },
+  {
+    "Province/State": "Guadeloupe",
+    "Country/Region": "France",
+    "Lat": 16.25,
+    "Long": -61.5833,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 3
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Guam",
+    "Lat": 13.4443,
+    "Long": 144.7937,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 3
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Puerto Rico",
+    "Lat": 18.2,
+    "Long": -66.5,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 3
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Benin",
+    "Lat": 9.3077,
+    "Long": 2.3158,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Greenland",
+    "Lat": 71.7069,
+    "Long": -42.6043,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Liberia",
+    "Lat": 6.4281,
+    "Long": -9.4295,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Mayotte",
+    "Lat": -12.8275,
+    "Long": 45.1662,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "Curacao",
+    "Country/Region": "Netherlands",
+    "Lat": 12.1696,
+    "Long": -68.99,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 1,
+    "3/15/20": 1,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Republic of the Congo",
+    "Lat": -1.44,
+    "Long": 15.556,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Somalia",
+    "Lat": 5.1521,
+    "Long": 46.1996,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Tanzania",
+    "Lat": -6.369,
+    "Long": 34.8888,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "The Bahamas",
+    "Lat": 24.25,
+    "Long": -76,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "Virgin Islands",
+    "Country/Region": "US",
+    "Lat": 18.3358,
+    "Long": -64.8963,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 1,
+    "3/15/20": 1,
+    "3/16/20": 1
+  },
+  {
+    "Province/State": "Cayman Islands",
+    "Country/Region": "United Kingdom",
+    "Lat": 19.3133,
+    "Long": -81.2546,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 1,
+    "3/14/20": 1,
+    "3/15/20": 1,
+    "3/16/20": 1
   }
 ];
 var recoveries=[
@@ -27554,7 +28811,8 @@ var recoveries=[
     "3/12/20": 34,
     "3/13/20": 35,
     "3/14/20": 35,
-    "3/15/20": 35
+    "3/15/20": 35,
+    "3/16/20": 35
   },
   {
     "Province/State": "",
@@ -27614,7 +28872,8 @@ var recoveries=[
     "3/12/20": 118,
     "3/13/20": 118,
     "3/14/20": 118,
-    "3/15/20": 118
+    "3/15/20": 118,
+    "3/16/20": 144
   },
   {
     "Province/State": "",
@@ -27674,7 +28933,8 @@ var recoveries=[
     "3/12/20": 96,
     "3/13/20": 97,
     "3/14/20": 105,
-    "3/15/20": 105
+    "3/15/20": 105,
+    "3/16/20": 109
   },
   {
     "Province/State": "",
@@ -27734,7 +28994,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -27794,7 +29055,8 @@ var recoveries=[
     "3/12/20": 26,
     "3/13/20": 26,
     "3/14/20": 35,
-    "3/15/20": 42
+    "3/15/20": 42,
+    "3/16/20": 42
   },
   {
     "Province/State": "British Columbia",
@@ -27854,7 +29116,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "New South Wales",
@@ -27914,7 +29177,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "Victoria",
@@ -27974,7 +29238,8 @@ var recoveries=[
     "3/12/20": 7,
     "3/13/20": 8,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "Queensland",
@@ -28034,7 +29299,8 @@ var recoveries=[
     "3/12/20": 8,
     "3/13/20": 8,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "",
@@ -28094,7 +29360,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -28154,7 +29421,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -28214,7 +29482,8 @@ var recoveries=[
     "3/12/20": 25,
     "3/13/20": 46,
     "3/14/20": 46,
-    "3/15/20": 46
+    "3/15/20": 46,
+    "3/16/20": 67
   },
   {
     "Province/State": "",
@@ -28274,7 +29543,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 10
   },
   {
     "Province/State": "",
@@ -28334,7 +29604,8 @@ var recoveries=[
     "3/12/20": 17,
     "3/13/20": 17,
     "3/14/20": 17,
-    "3/15/20": 23
+    "3/15/20": 23,
+    "3/16/20": 23
   },
   {
     "Province/State": "",
@@ -28394,7 +29665,8 @@ var recoveries=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -28454,7 +29726,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 13
+    "3/15/20": 13,
+    "3/16/20": 13
   },
   {
     "Province/State": "",
@@ -28514,7 +29787,8 @@ var recoveries=[
     "3/12/20": 1045,
     "3/13/20": 1439,
     "3/14/20": 1966,
-    "3/15/20": 2335
+    "3/15/20": 2335,
+    "3/16/20": 2749
   },
   {
     "Province/State": "",
@@ -28574,7 +29848,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -28634,7 +29909,8 @@ var recoveries=[
     "3/12/20": 183,
     "3/13/20": 193,
     "3/14/20": 517,
-    "3/15/20": 517
+    "3/15/20": 517,
+    "3/16/20": 530
   },
   {
     "Province/State": "South Australia",
@@ -28694,7 +29970,8 @@ var recoveries=[
     "3/12/20": 2,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -28754,7 +30031,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -28814,7 +30092,8 @@ var recoveries=[
     "3/12/20": 27,
     "3/13/20": 27,
     "3/14/20": 27,
-    "3/15/20": 21
+    "3/15/20": 21,
+    "3/16/20": 27
   },
   {
     "Province/State": "From Diamond Princess",
@@ -28874,7 +30153,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -28934,7 +30214,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -28994,7 +30275,8 @@ var recoveries=[
     "3/12/20": 15,
     "3/13/20": 24,
     "3/14/20": 26,
-    "3/15/20": 26
+    "3/15/20": 26,
+    "3/16/20": 26
   },
   {
     "Province/State": "",
@@ -29054,7 +30336,8 @@ var recoveries=[
     "3/12/20": 9,
     "3/13/20": 9,
     "3/14/20": 9,
-    "3/15/20": 9
+    "3/15/20": 9,
+    "3/16/20": 9
   },
   {
     "Province/State": "",
@@ -29114,7 +30397,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -29174,7 +30458,8 @@ var recoveries=[
     "3/12/20": 35,
     "3/13/20": 44,
     "3/14/20": 44,
-    "3/15/20": 60
+    "3/15/20": 60,
+    "3/16/20": 77
   },
   {
     "Province/State": "",
@@ -29234,7 +30519,8 @@ var recoveries=[
     "3/12/20": 5,
     "3/13/20": 5,
     "3/14/20": 5,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 9
   },
   {
     "Province/State": "",
@@ -29294,7 +30580,8 @@ var recoveries=[
     "3/12/20": 8,
     "3/13/20": 8,
     "3/14/20": 12,
-    "3/15/20": 12
+    "3/15/20": 12,
+    "3/16/20": 12
   },
   {
     "Province/State": "",
@@ -29354,7 +30641,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -29414,7 +30702,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -29474,7 +30763,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "",
@@ -29534,7 +30824,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -29594,7 +30885,8 @@ var recoveries=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -29654,7 +30946,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -29714,7 +31007,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -29774,7 +31068,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "",
@@ -29834,7 +31129,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -29894,7 +31190,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -29954,7 +31251,8 @@ var recoveries=[
     "3/12/20": 6,
     "3/13/20": 7,
     "3/14/20": 9,
-    "3/15/20": 9
+    "3/15/20": 9,
+    "3/16/20": 9
   },
   {
     "Province/State": "",
@@ -30014,67 +31312,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Netherlands",
-    "Lat": 52.1326,
-    "Long": 5.2913,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -30134,7 +31373,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -30194,7 +31434,8 @@ var recoveries=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -30254,7 +31495,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30314,7 +31556,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -30374,7 +31617,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -30434,7 +31678,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30494,7 +31739,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Western Australia",
@@ -30554,7 +31800,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30614,7 +31861,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30674,7 +31922,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30734,7 +31983,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30794,7 +32044,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -30854,7 +32105,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -30914,7 +32166,8 @@ var recoveries=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "",
@@ -30974,7 +32227,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31034,7 +32288,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31094,7 +32349,8 @@ var recoveries=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "",
@@ -31154,7 +32410,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -31214,7 +32471,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Tasmania",
@@ -31274,7 +32532,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31334,7 +32593,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -31394,7 +32654,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -31454,7 +32715,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -31514,7 +32776,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -31574,7 +32837,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -31634,7 +32898,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31694,7 +32959,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -31754,7 +33020,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31814,7 +33081,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Northern Territory",
@@ -31874,7 +33142,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31934,7 +33203,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -31994,7 +33264,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 13
   },
   {
     "Province/State": "",
@@ -32054,7 +33325,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32114,7 +33386,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32174,7 +33447,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32234,7 +33508,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32294,7 +33569,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32354,7 +33630,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32414,7 +33691,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32474,7 +33752,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32534,7 +33813,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32594,7 +33874,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -32654,7 +33935,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32714,7 +33996,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32774,7 +34057,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -32834,7 +34118,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32894,7 +34179,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -32954,7 +34240,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -33014,7 +34301,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -33074,7 +34362,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ontario",
@@ -33134,7 +34423,8 @@ var recoveries=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 5
   },
   {
     "Province/State": "Alberta",
@@ -33194,7 +34484,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Quebec",
@@ -33254,7 +34545,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -33314,7 +34606,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -33374,7 +34667,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -33434,7 +34728,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington",
@@ -33494,7 +34789,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "New York",
@@ -33554,7 +34850,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "California",
@@ -33614,7 +34911,8 @@ var recoveries=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "Massachusetts",
@@ -33674,7 +34972,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Diamond Princess",
@@ -33734,7 +35033,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grand Princess",
@@ -33794,7 +35094,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Georgia",
@@ -33854,7 +35155,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Colorado",
@@ -33914,7 +35216,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Florida",
@@ -33974,7 +35277,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Jersey",
@@ -34034,7 +35338,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "Oregon",
@@ -34094,7 +35399,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Texas",
@@ -34154,7 +35460,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Illinois",
@@ -34214,7 +35521,8 @@ var recoveries=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Pennsylvania",
@@ -34274,7 +35582,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Iowa",
@@ -34334,7 +35643,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maryland",
@@ -34394,7 +35704,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 3
   },
   {
     "Province/State": "North Carolina",
@@ -34454,7 +35765,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "South Carolina",
@@ -34514,7 +35826,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tennessee",
@@ -34574,7 +35887,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Virginia",
@@ -34634,7 +35948,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arizona",
@@ -34694,7 +36009,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Indiana",
@@ -34754,7 +36070,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kentucky",
@@ -34814,7 +36131,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "District of Columbia",
@@ -34874,7 +36192,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nevada",
@@ -34934,7 +36253,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Hampshire",
@@ -34994,7 +36314,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Minnesota",
@@ -35054,7 +36375,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nebraska",
@@ -35114,7 +36436,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ohio",
@@ -35174,7 +36497,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rhode Island",
@@ -35234,7 +36558,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wisconsin",
@@ -35294,7 +36619,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Connecticut",
@@ -35354,7 +36680,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hawaii",
@@ -35414,7 +36741,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Oklahoma",
@@ -35474,7 +36802,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Utah",
@@ -35534,7 +36863,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -35594,7 +36924,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -35654,7 +36985,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -35714,7 +37046,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -35774,7 +37107,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kansas",
@@ -35834,7 +37168,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Louisiana",
@@ -35894,7 +37229,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Missouri",
@@ -35954,7 +37290,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Vermont",
@@ -36014,7 +37351,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alaska",
@@ -36074,7 +37412,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arkansas",
@@ -36134,7 +37473,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Delaware",
@@ -36194,7 +37534,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Idaho",
@@ -36254,7 +37595,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maine",
@@ -36314,7 +37656,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Michigan",
@@ -36374,7 +37717,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Mississippi",
@@ -36434,7 +37778,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montana",
@@ -36494,7 +37839,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Mexico",
@@ -36554,7 +37900,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "North Dakota",
@@ -36614,7 +37961,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "South Dakota",
@@ -36674,7 +38022,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "West Virginia",
@@ -36734,7 +38083,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wyoming",
@@ -36794,7 +38144,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hubei",
@@ -36854,7 +38205,8 @@ var recoveries=[
     "3/12/20": 50318,
     "3/13/20": 51553,
     "3/14/20": 52960,
-    "3/15/20": 54288
+    "3/15/20": 54288,
+    "3/16/20": 55142
   },
   {
     "Province/State": "",
@@ -36914,7 +38266,8 @@ var recoveries=[
     "3/12/20": 2959,
     "3/13/20": 2959,
     "3/14/20": 2959,
-    "3/15/20": 4590
+    "3/15/20": 4590,
+    "3/16/20": 4590
   },
   {
     "Province/State": "",
@@ -36974,7 +38327,8 @@ var recoveries=[
     "3/12/20": 333,
     "3/13/20": 510,
     "3/14/20": 510,
-    "3/15/20": 510
+    "3/15/20": 510,
+    "3/16/20": 1137
   },
   {
     "Province/State": "France",
@@ -37034,7 +38388,8 @@ var recoveries=[
     "3/12/20": 12,
     "3/13/20": 12,
     "3/14/20": 12,
-    "3/15/20": 12
+    "3/15/20": 12,
+    "3/16/20": 12
   },
   {
     "Province/State": "Guangdong",
@@ -37094,7 +38449,8 @@ var recoveries=[
     "3/12/20": 1289,
     "3/13/20": 1296,
     "3/14/20": 1299,
-    "3/15/20": 1304
+    "3/15/20": 1304,
+    "3/16/20": 1306
   },
   {
     "Province/State": "Henan",
@@ -37154,7 +38510,8 @@ var recoveries=[
     "3/12/20": 1249,
     "3/13/20": 1249,
     "3/14/20": 1250,
-    "3/15/20": 1250
+    "3/15/20": 1250,
+    "3/16/20": 1250
   },
   {
     "Province/State": "Zhejiang",
@@ -37214,7 +38571,8 @@ var recoveries=[
     "3/12/20": 1197,
     "3/13/20": 1197,
     "3/14/20": 1211,
-    "3/15/20": 1211
+    "3/15/20": 1211,
+    "3/16/20": 1216
   },
   {
     "Province/State": "Hunan",
@@ -37274,7 +38632,8 @@ var recoveries=[
     "3/12/20": 999,
     "3/13/20": 1005,
     "3/14/20": 1014,
-    "3/15/20": 1014
+    "3/15/20": 1014,
+    "3/16/20": 1014
   },
   {
     "Province/State": "Anhui",
@@ -37334,7 +38693,8 @@ var recoveries=[
     "3/12/20": 984,
     "3/13/20": 984,
     "3/14/20": 984,
-    "3/15/20": 984
+    "3/15/20": 984,
+    "3/16/20": 984
   },
   {
     "Province/State": "Jiangxi",
@@ -37394,7 +38754,8 @@ var recoveries=[
     "3/12/20": 934,
     "3/13/20": 934,
     "3/14/20": 934,
-    "3/15/20": 934
+    "3/15/20": 934,
+    "3/16/20": 934
   },
   {
     "Province/State": "Shandong",
@@ -37454,7 +38815,8 @@ var recoveries=[
     "3/12/20": 734,
     "3/13/20": 739,
     "3/14/20": 741,
-    "3/15/20": 741
+    "3/15/20": 741,
+    "3/16/20": 746
   },
   {
     "Province/State": "Diamond Princess",
@@ -37514,7 +38876,8 @@ var recoveries=[
     "3/12/20": 325,
     "3/13/20": 325,
     "3/14/20": 325,
-    "3/15/20": 325
+    "3/15/20": 325,
+    "3/16/20": 325
   },
   {
     "Province/State": "Jiangsu",
@@ -37574,7 +38937,8 @@ var recoveries=[
     "3/12/20": 629,
     "3/13/20": 630,
     "3/14/20": 630,
-    "3/15/20": 631
+    "3/15/20": 631,
+    "3/16/20": 631
   },
   {
     "Province/State": "Chongqing",
@@ -37634,7 +38998,8 @@ var recoveries=[
     "3/12/20": 564,
     "3/13/20": 566,
     "3/14/20": 569,
-    "3/15/20": 570
+    "3/15/20": 570,
+    "3/16/20": 570
   },
   {
     "Province/State": "Sichuan",
@@ -37694,7 +39059,8 @@ var recoveries=[
     "3/12/20": 498,
     "3/13/20": 503,
     "3/14/20": 511,
-    "3/15/20": 516
+    "3/15/20": 516,
+    "3/16/20": 516
   },
   {
     "Province/State": "Heilongjiang",
@@ -37754,7 +39120,8 @@ var recoveries=[
     "3/12/20": 441,
     "3/13/20": 446,
     "3/14/20": 447,
-    "3/15/20": 453
+    "3/15/20": 453,
+    "3/16/20": 455
   },
   {
     "Province/State": "Denmark",
@@ -37814,7 +39181,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Beijing",
@@ -37874,7 +39242,8 @@ var recoveries=[
     "3/12/20": 334,
     "3/13/20": 342,
     "3/14/20": 349,
-    "3/15/20": 353
+    "3/15/20": 353,
+    "3/16/20": 360
   },
   {
     "Province/State": "Shanghai",
@@ -37934,7 +39303,8 @@ var recoveries=[
     "3/12/20": 321,
     "3/13/20": 324,
     "3/14/20": 324,
-    "3/15/20": 324
+    "3/15/20": 324,
+    "3/16/20": 325
   },
   {
     "Province/State": "Hebei",
@@ -37994,7 +39364,8 @@ var recoveries=[
     "3/12/20": 308,
     "3/13/20": 310,
     "3/14/20": 310,
-    "3/15/20": 310
+    "3/15/20": 310,
+    "3/16/20": 310
   },
   {
     "Province/State": "Fujian",
@@ -38054,7 +39425,8 @@ var recoveries=[
     "3/12/20": 295,
     "3/13/20": 295,
     "3/14/20": 295,
-    "3/15/20": 295
+    "3/15/20": 295,
+    "3/16/20": 295
   },
   {
     "Province/State": "Guangxi",
@@ -38114,7 +39486,8 @@ var recoveries=[
     "3/12/20": 241,
     "3/13/20": 243,
     "3/14/20": 243,
-    "3/15/20": 243
+    "3/15/20": 243,
+    "3/16/20": 248
   },
   {
     "Province/State": "Shaanxi",
@@ -38174,7 +39547,8 @@ var recoveries=[
     "3/12/20": 232,
     "3/13/20": 232,
     "3/14/20": 232,
-    "3/15/20": 232
+    "3/15/20": 232,
+    "3/16/20": 233
   },
   {
     "Province/State": "Yunnan",
@@ -38234,7 +39608,8 @@ var recoveries=[
     "3/12/20": 170,
     "3/13/20": 170,
     "3/14/20": 172,
-    "3/15/20": 172
+    "3/15/20": 172,
+    "3/16/20": 172
   },
   {
     "Province/State": "Hainan",
@@ -38294,7 +39669,8 @@ var recoveries=[
     "3/12/20": 160,
     "3/13/20": 160,
     "3/14/20": 160,
-    "3/15/20": 160
+    "3/15/20": 160,
+    "3/16/20": 161
   },
   {
     "Province/State": "Guizhou",
@@ -38354,7 +39730,8 @@ var recoveries=[
     "3/12/20": 137,
     "3/13/20": 140,
     "3/14/20": 143,
-    "3/15/20": 143
+    "3/15/20": 143,
+    "3/16/20": 144
   },
   {
     "Province/State": "Tianjin",
@@ -38414,7 +39791,8 @@ var recoveries=[
     "3/12/20": 132,
     "3/13/20": 132,
     "3/14/20": 132,
-    "3/15/20": 133
+    "3/15/20": 133,
+    "3/16/20": 133
   },
   {
     "Province/State": "Shanxi",
@@ -38474,7 +39852,8 @@ var recoveries=[
     "3/12/20": 132,
     "3/13/20": 133,
     "3/14/20": 133,
-    "3/15/20": 133
+    "3/15/20": 133,
+    "3/16/20": 133
   },
   {
     "Province/State": "Gansu",
@@ -38534,7 +39913,8 @@ var recoveries=[
     "3/12/20": 88,
     "3/13/20": 88,
     "3/14/20": 89,
-    "3/15/20": 91
+    "3/15/20": 91,
+    "3/16/20": 91
   },
   {
     "Province/State": "Hong Kong",
@@ -38594,7 +39974,8 @@ var recoveries=[
     "3/12/20": 67,
     "3/13/20": 77,
     "3/14/20": 78,
-    "3/15/20": 81
+    "3/15/20": 81,
+    "3/16/20": 84
   },
   {
     "Province/State": "Liaoning",
@@ -38654,7 +40035,8 @@ var recoveries=[
     "3/12/20": 112,
     "3/13/20": 112,
     "3/14/20": 113,
-    "3/15/20": 114
+    "3/15/20": 114,
+    "3/16/20": 115
   },
   {
     "Province/State": "Jilin",
@@ -38714,7 +40096,8 @@ var recoveries=[
     "3/12/20": 91,
     "3/13/20": 91,
     "3/14/20": 91,
-    "3/15/20": 91
+    "3/15/20": 91,
+    "3/16/20": 92
   },
   {
     "Province/State": "",
@@ -38774,7 +40157,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 3
   },
   {
     "Province/State": "Xinjiang",
@@ -38834,7 +40218,8 @@ var recoveries=[
     "3/12/20": 73,
     "3/13/20": 73,
     "3/14/20": 73,
-    "3/15/20": 73
+    "3/15/20": 73,
+    "3/16/20": 73
   },
   {
     "Province/State": "Inner Mongolia",
@@ -38894,7 +40279,8 @@ var recoveries=[
     "3/12/20": 71,
     "3/13/20": 71,
     "3/14/20": 71,
-    "3/15/20": 71
+    "3/15/20": 71,
+    "3/16/20": 73
   },
   {
     "Province/State": "Ningxia",
@@ -38954,7 +40340,8 @@ var recoveries=[
     "3/12/20": 72,
     "3/13/20": 72,
     "3/14/20": 73,
-    "3/15/20": 73
+    "3/15/20": 73,
+    "3/16/20": 75
   },
   {
     "Province/State": "",
@@ -39014,7 +40401,8 @@ var recoveries=[
     "3/12/20": 20,
     "3/13/20": 20,
     "3/14/20": 20,
-    "3/15/20": 20
+    "3/15/20": 20,
+    "3/16/20": 20
   },
   {
     "Province/State": "",
@@ -39074,7 +40462,8 @@ var recoveries=[
     "3/12/20": 16,
     "3/13/20": 16,
     "3/14/20": 16,
-    "3/15/20": 16
+    "3/15/20": 16,
+    "3/16/20": 16
   },
   {
     "Province/State": "",
@@ -39134,7 +40523,8 @@ var recoveries=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "Qinghai",
@@ -39194,7 +40584,8 @@ var recoveries=[
     "3/12/20": 18,
     "3/13/20": 18,
     "3/14/20": 18,
-    "3/15/20": 18
+    "3/15/20": 18,
+    "3/16/20": 18
   },
   {
     "Province/State": "Macau",
@@ -39254,7 +40645,8 @@ var recoveries=[
     "3/12/20": 10,
     "3/13/20": 10,
     "3/14/20": 10,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 10
   },
   {
     "Province/State": "",
@@ -39314,7 +40706,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -39374,7 +40767,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Faroe Islands",
@@ -39434,7 +40828,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St Martin",
@@ -39494,7 +40889,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -39554,7 +40950,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Channel Islands",
@@ -39614,7 +41011,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Brunswick",
@@ -39674,7 +41072,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tibet",
@@ -39734,7 +41133,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -39794,7 +41194,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -39854,7 +41255,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saint Barthelemy",
@@ -39914,7 +41316,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -39974,7 +41377,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -40034,7 +41438,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -40094,7 +41499,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gibraltar",
@@ -40154,7 +41560,8 @@ var recoveries=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Kitsap, WA",
@@ -40214,7 +41621,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Solano, CA",
@@ -40274,7 +41682,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Cruz, CA",
@@ -40334,7 +41743,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Napa, CA",
@@ -40394,7 +41804,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ventura, CA",
@@ -40454,7 +41865,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Worcester, MA",
@@ -40514,7 +41926,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gwinnett, GA",
@@ -40574,7 +41987,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "DeKalb, GA",
@@ -40634,7 +42048,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Floyd, GA",
@@ -40694,7 +42109,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fayette, GA",
@@ -40754,7 +42170,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gregg, TX",
@@ -40814,7 +42231,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Monmouth, NJ",
@@ -40874,7 +42292,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Burlington, NJ",
@@ -40934,7 +42353,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Camden, NJ",
@@ -40994,7 +42414,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Passaic, NJ",
@@ -41054,7 +42475,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Union, NJ",
@@ -41114,7 +42536,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Eagle, CO",
@@ -41174,7 +42597,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Larimer, CO",
@@ -41234,7 +42658,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arapahoe, CO",
@@ -41294,7 +42719,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gunnison, CO",
@@ -41354,7 +42780,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kane, IL",
@@ -41414,7 +42841,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Monroe, PA",
@@ -41474,7 +42902,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Philadelphia, PA",
@@ -41534,7 +42963,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Norfolk, VA",
@@ -41594,7 +43024,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arlington, VA",
@@ -41654,7 +43085,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Spotsylvania, VA",
@@ -41714,7 +43146,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Loudoun, VA",
@@ -41774,7 +43207,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Prince George's, MD",
@@ -41834,7 +43268,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pottawattamie, IA",
@@ -41894,7 +43329,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Camden, NC",
@@ -41954,7 +43390,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pima, AZ",
@@ -42014,7 +43451,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Noble, IN",
@@ -42074,7 +43512,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Adams, IN",
@@ -42134,7 +43573,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Boone, IN",
@@ -42194,7 +43634,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Dane, WI",
@@ -42254,7 +43695,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pierce, WI",
@@ -42314,7 +43756,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cuyahoga, OH",
@@ -42374,7 +43817,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Weber, UT",
@@ -42434,7 +43878,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bennington County, VT",
@@ -42494,7 +43939,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Carver County, MN",
@@ -42554,7 +44000,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charlotte County, FL",
@@ -42614,7 +44061,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cherokee County, GA",
@@ -42674,7 +44122,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Collin County, TX",
@@ -42734,7 +44183,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson County, KY",
@@ -42794,7 +44244,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson Parish, LA",
@@ -42854,7 +44305,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Shasta County, CA",
@@ -42914,7 +44366,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Spartanburg County, SC",
@@ -42974,7 +44427,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harrison County, KY",
@@ -43034,7 +44488,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson County, IA",
@@ -43094,7 +44549,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Berkshire County, MA",
@@ -43154,7 +44610,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davidson County, TN",
@@ -43214,7 +44671,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, OR",
@@ -43274,7 +44732,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fresno County, CA",
@@ -43334,7 +44793,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harford County, MD",
@@ -43394,7 +44854,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hendricks County, IN",
@@ -43454,7 +44915,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hudson County, NJ",
@@ -43514,7 +44976,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson County, KS",
@@ -43574,7 +45037,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kittitas County, WA",
@@ -43634,7 +45098,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Manatee County, FL",
@@ -43694,7 +45159,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marion County, OR",
@@ -43754,7 +45220,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Okaloosa County, FL",
@@ -43814,7 +45281,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Polk County, GA",
@@ -43874,7 +45342,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Riverside County, CA",
@@ -43934,7 +45403,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Shelby County, TN",
@@ -43994,7 +45464,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St. Louis County, MO",
@@ -44054,7 +45525,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Suffolk County, NY",
@@ -44114,7 +45586,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ulster County, NY",
@@ -44174,7 +45647,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Volusia County, FL",
@@ -44234,7 +45708,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fairfax County, VA",
@@ -44294,7 +45769,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rockingham County, NH",
@@ -44354,7 +45830,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington, D.C.",
@@ -44414,7 +45891,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery County, PA",
@@ -44474,7 +45952,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alameda County, CA",
@@ -44534,7 +46013,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Broward County, FL",
@@ -44594,7 +46074,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lee County, FL",
@@ -44654,7 +46135,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pinal County, AZ",
@@ -44714,7 +46196,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rockland County, NY",
@@ -44774,7 +46257,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saratoga County, NY",
@@ -44834,7 +46318,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charleston County, SC",
@@ -44894,7 +46379,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Clark County, WA",
@@ -44954,7 +46440,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cobb County, GA",
@@ -45014,7 +46501,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davis County, UT",
@@ -45074,7 +46562,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "El Paso County, CO",
@@ -45134,7 +46623,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Honolulu County, HI",
@@ -45194,7 +46684,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jackson County, OR",
@@ -45254,7 +46745,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson County, WA",
@@ -45314,7 +46806,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kershaw County, SC",
@@ -45374,7 +46867,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Klamath County, OR",
@@ -45434,7 +46928,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Madera County, CA",
@@ -45494,7 +46989,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pierce County, WA",
@@ -45554,7 +47050,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tulsa County, OK",
@@ -45614,7 +47111,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, CO",
@@ -45674,7 +47172,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Providence County, RI",
@@ -45734,7 +47233,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Chatham County, NC",
@@ -45794,7 +47294,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Delaware County, PA",
@@ -45854,7 +47355,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, NE",
@@ -45914,7 +47416,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fayette County, KY",
@@ -45974,7 +47477,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marion County, IN",
@@ -46034,7 +47538,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Middlesex County, MA",
@@ -46094,7 +47599,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nassau County, NY",
@@ -46154,7 +47660,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ramsey County, MN",
@@ -46214,7 +47721,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washoe County, NV",
@@ -46274,7 +47782,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wayne County, PA",
@@ -46334,7 +47843,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Yolo County, CA",
@@ -46394,7 +47904,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Clara County, CA",
@@ -46454,7 +47965,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Clark County, NV",
@@ -46514,7 +48026,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fort Bend County, TX",
@@ -46574,7 +48087,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grant County, WA",
@@ -46634,7 +48148,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Rosa County, FL",
@@ -46694,7 +48209,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Williamson County, TN",
@@ -46754,7 +48270,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New York County, NY",
@@ -46814,7 +48331,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery County, MD",
@@ -46874,7 +48392,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Suffolk County, MA",
@@ -46934,7 +48453,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Denver County, CO",
@@ -46994,7 +48514,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Summit County, CO",
@@ -47054,7 +48575,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bergen County, NJ",
@@ -47114,7 +48636,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harris County, TX",
@@ -47174,7 +48697,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Francisco County, CA",
@@ -47234,7 +48758,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Contra Costa County, CA",
@@ -47294,7 +48819,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Orange County, CA",
@@ -47354,7 +48880,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Norfolk County, MA",
@@ -47414,7 +48941,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maricopa County, AZ",
@@ -47474,7 +49002,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wake County, NC",
@@ -47534,7 +49063,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Westchester County, NY",
@@ -47594,7 +49124,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grafton County, NH",
@@ -47654,7 +49185,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hillsborough, FL",
@@ -47714,7 +49246,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Placer County, CA",
@@ -47774,7 +49307,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Mateo, CA",
@@ -47834,7 +49368,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sonoma County, CA",
@@ -47894,7 +49429,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Umatilla, OR",
@@ -47954,7 +49490,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fulton County, GA",
@@ -48014,7 +49551,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington County, OR",
@@ -48074,7 +49612,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Snohomish County, WA",
@@ -48134,7 +49673,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Humboldt County, CA",
@@ -48194,7 +49734,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sacramento County, CA",
@@ -48254,7 +49795,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Diego County, CA",
@@ -48314,7 +49856,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Benito, CA",
@@ -48374,7 +49917,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Los Angeles, CA",
@@ -48434,7 +49978,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "King County, WA",
@@ -48494,7 +50039,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cook County, IL",
@@ -48554,7 +50100,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Skagit, WA",
@@ -48614,7 +50161,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Thurston, WA",
@@ -48674,7 +50222,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Island, WA",
@@ -48734,7 +50283,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Whatcom, WA",
@@ -48794,7 +50344,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marin, CA",
@@ -48854,7 +50405,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Calaveras, CA",
@@ -48914,7 +50466,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Stanislaus, CA",
@@ -48974,7 +50527,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Joaquin, CA",
@@ -49034,7 +50588,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Essex, MA",
@@ -49094,7 +50649,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charlton, GA",
@@ -49154,7 +50710,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Collier, FL",
@@ -49214,7 +50771,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pinellas, FL",
@@ -49274,7 +50832,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alachua, FL",
@@ -49334,7 +50893,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nassau, FL",
@@ -49394,7 +50954,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pasco, FL",
@@ -49454,7 +51015,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Dallas, TX",
@@ -49514,7 +51076,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tarrant, TX",
@@ -49574,7 +51137,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery, TX",
@@ -49634,7 +51198,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Middlesex, NJ",
@@ -49694,7 +51259,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson, CO",
@@ -49754,7 +51320,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Multnomah, OR",
@@ -49814,7 +51381,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Polk, OR",
@@ -49874,7 +51442,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Deschutes, OR",
@@ -49934,7 +51503,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "McHenry, IL",
@@ -49994,7 +51564,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lake, IL",
@@ -50054,7 +51625,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bucks, PA",
@@ -50114,7 +51686,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hanover, VA",
@@ -50174,7 +51747,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lancaster, SC",
@@ -50234,7 +51808,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sullivan, TN",
@@ -50294,7 +51869,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson, IN",
@@ -50354,7 +51930,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Howard, IN",
@@ -50414,7 +51991,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St. Joseph, IN",
@@ -50474,7 +52052,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Knox, NE",
@@ -50534,7 +52113,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Stark, OH",
@@ -50594,7 +52174,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Anoka, MN",
@@ -50654,7 +52235,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Olmsted, MN",
@@ -50714,7 +52296,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Summit, UT",
@@ -50774,7 +52357,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fairfield, CT",
@@ -50834,7 +52418,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Litchfield, CT",
@@ -50894,7 +52479,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Orleans, LA",
@@ -50954,7 +52540,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pennington, SD",
@@ -51014,7 +52601,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Beadle, SD",
@@ -51074,7 +52662,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charles Mix, SD",
@@ -51134,7 +52723,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davison, SD",
@@ -51194,7 +52784,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Minnehaha, SD",
@@ -51254,7 +52845,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bon Homme, SD",
@@ -51314,7 +52906,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Socorro, NM",
@@ -51374,7 +52967,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bernalillo, NM",
@@ -51434,7 +53028,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Oakland, MI",
@@ -51494,7 +53089,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wayne, MI",
@@ -51554,7 +53150,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Castle, DE",
@@ -51614,7 +53211,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -51674,7 +53272,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -51734,7 +53333,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Australian Capital Territory",
@@ -51794,7 +53394,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "United Kingdom",
@@ -51854,7 +53455,8 @@ var recoveries=[
     "3/12/20": 18,
     "3/13/20": 18,
     "3/14/20": 18,
-    "3/15/20": 18
+    "3/15/20": 18,
+    "3/16/20": 20
   },
   {
     "Province/State": "",
@@ -51914,7 +53516,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "French Polynesia",
@@ -51974,67 +53577,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Cayman Islands",
-    "Lat": 19.3133,
-    "Long": -81.2546,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52094,7 +53638,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Manitoba",
@@ -52154,7 +53699,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saskatchewan",
@@ -52214,7 +53760,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52274,7 +53821,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52334,7 +53882,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52394,7 +53943,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52454,7 +54004,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52514,7 +54065,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grand Princess",
@@ -52574,7 +54126,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52634,7 +54187,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alabama",
@@ -52694,7 +54248,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52754,7 +54309,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52814,7 +54370,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Puerto Rico",
@@ -52874,7 +54431,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52934,7 +54492,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -52994,7 +54553,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53054,7 +54614,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53114,7 +54675,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53174,67 +54736,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Curacao",
-    "Lat": 12.1696,
-    "Long": -68.99,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53294,7 +54797,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53354,7 +54858,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53414,7 +54919,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53474,7 +54980,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53534,7 +55041,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53594,7 +55102,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53654,7 +55163,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53714,7 +55224,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53774,67 +55285,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "Virgin Islands, U.S.",
-    "Country/Region": "US",
-    "Lat": 18.3358,
-    "Long": -64.8963,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -53894,7 +55346,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "French Guiana",
@@ -53954,7 +55407,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Guam",
@@ -54014,7 +55468,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54074,7 +55529,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Newfoundland and Labrador",
@@ -54134,7 +55590,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Prince Edward Island",
@@ -54194,7 +55651,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54254,7 +55712,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54314,7 +55773,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54374,7 +55834,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Mayotte",
@@ -54434,7 +55895,8 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54494,7 +55956,1045 @@ var recoveries=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Netherlands",
+    "Country/Region": "Netherlands",
+    "Lat": 52.1326,
+    "Long": 5.2913,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 2,
+    "3/15/20": 2,
+    "3/16/20": 2
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "French Guiana",
+    "Lat": 3.9339,
+    "Long": -53.1258,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Nova Scotia",
+    "Country/Region": "Canada",
+    "Lat": 44.682,
+    "Long": -63.7443,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Guadeloupe",
+    "Country/Region": "France",
+    "Lat": 16.25,
+    "Long": -61.5833,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Guam",
+    "Lat": 13.4443,
+    "Long": 144.7937,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Puerto Rico",
+    "Lat": 18.2,
+    "Long": -66.5,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Benin",
+    "Lat": 9.3077,
+    "Long": 2.3158,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Greenland",
+    "Lat": 71.7069,
+    "Long": -42.6043,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Liberia",
+    "Lat": 6.4281,
+    "Long": -9.4295,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Mayotte",
+    "Lat": -12.8275,
+    "Long": 45.1662,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Curacao",
+    "Country/Region": "Netherlands",
+    "Lat": 12.1696,
+    "Long": -68.99,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Republic of the Congo",
+    "Lat": -1.44,
+    "Long": 15.556,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Somalia",
+    "Lat": 5.1521,
+    "Long": 46.1996,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Tanzania",
+    "Lat": -6.369,
+    "Long": 34.8888,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "The Bahamas",
+    "Lat": 24.25,
+    "Long": -76,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Virgin Islands",
+    "Country/Region": "US",
+    "Lat": 18.3358,
+    "Long": -64.8963,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Cayman Islands",
+    "Country/Region": "United Kingdom",
+    "Lat": 19.3133,
+    "Long": -81.2546,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
   }
 ];
 var deaths=[
@@ -54556,7 +57056,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -54616,7 +57117,8 @@ var deaths=[
     "3/12/20": 16,
     "3/13/20": 19,
     "3/14/20": 22,
-    "3/15/20": 22
+    "3/15/20": 22,
+    "3/16/20": 27
   },
   {
     "Province/State": "",
@@ -54676,7 +57178,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54736,7 +57239,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -54796,7 +57300,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "British Columbia",
@@ -54856,7 +57361,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 4
   },
   {
     "Province/State": "New South Wales",
@@ -54916,7 +57422,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Victoria",
@@ -54976,7 +57483,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Queensland",
@@ -55036,7 +57544,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55096,7 +57605,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55156,7 +57666,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55216,7 +57727,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 7,
     "3/14/20": 9,
-    "3/15/20": 11
+    "3/15/20": 11,
+    "3/16/20": 17
   },
   {
     "Province/State": "",
@@ -55276,7 +57788,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55336,7 +57849,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55396,7 +57910,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 5,
     "3/14/20": 8,
-    "3/15/20": 11
+    "3/15/20": 11,
+    "3/16/20": 12
   },
   {
     "Province/State": "",
@@ -55456,7 +57971,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -55516,7 +58032,8 @@ var deaths=[
     "3/12/20": 827,
     "3/13/20": 1266,
     "3/14/20": 1441,
-    "3/15/20": 1809
+    "3/15/20": 1809,
+    "3/16/20": 2158
   },
   {
     "Province/State": "",
@@ -55576,7 +58093,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 2,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 6
   },
   {
     "Province/State": "",
@@ -55636,7 +58154,8 @@ var deaths=[
     "3/12/20": 55,
     "3/13/20": 133,
     "3/14/20": 195,
-    "3/15/20": 289
+    "3/15/20": 289,
+    "3/16/20": 342
   },
   {
     "Province/State": "South Australia",
@@ -55696,7 +58215,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55756,7 +58276,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 5
   },
   {
     "Province/State": "",
@@ -55816,7 +58337,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "From Diamond Princess",
@@ -55876,7 +58398,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -55936,7 +58459,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -55996,7 +58520,8 @@ var deaths=[
     "3/12/20": 8,
     "3/13/20": 9,
     "3/14/20": 10,
-    "3/15/20": 10
+    "3/15/20": 10,
+    "3/16/20": 10
   },
   {
     "Province/State": "",
@@ -56056,7 +58581,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56116,7 +58642,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56176,7 +58703,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -56236,7 +58764,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56296,7 +58825,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 3,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -56356,7 +58886,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56416,7 +58947,8 @@ var deaths=[
     "3/12/20": 4,
     "3/13/20": 11,
     "3/14/20": 13,
-    "3/15/20": 14
+    "3/15/20": 14,
+    "3/16/20": 14
   },
   {
     "Province/State": "",
@@ -56476,7 +59008,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -56536,7 +59069,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56596,7 +59130,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56656,7 +59191,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56716,7 +59252,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56776,7 +59313,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 3,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -56836,7 +59374,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -56896,7 +59435,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "",
@@ -56956,7 +59496,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57016,67 +59557,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Netherlands",
-    "Lat": 52.1326,
-    "Long": 5.2913,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 1,
-    "3/7/20": 1,
-    "3/8/20": 3,
-    "3/9/20": 3,
-    "3/10/20": 4,
-    "3/11/20": 5,
-    "3/12/20": 5,
-    "3/13/20": 10,
-    "3/14/20": 12,
-    "3/15/20": 20
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57136,7 +59618,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 5,
     "3/14/20": 5,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 7
   },
   {
     "Province/State": "",
@@ -57196,7 +59679,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57256,7 +59740,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57316,7 +59801,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57376,7 +59862,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57436,7 +59923,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57496,7 +59984,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Western Australia",
@@ -57556,7 +60045,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -57616,7 +60106,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -57676,7 +60167,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -57736,7 +60228,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57796,7 +60289,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -57856,7 +60350,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -57916,7 +60411,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -57976,7 +60472,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58036,7 +60533,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58096,7 +60594,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 4,
     "3/14/20": 5,
-    "3/15/20": 5
+    "3/15/20": 5,
+    "3/16/20": 5
   },
   {
     "Province/State": "",
@@ -58156,7 +60655,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58216,7 +60716,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tasmania",
@@ -58276,7 +60777,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58336,7 +60838,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58396,7 +60899,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -58456,7 +60960,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58516,7 +61021,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58576,7 +61082,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -58636,7 +61143,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58696,7 +61204,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58756,7 +61265,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -58816,7 +61326,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Northern Territory",
@@ -58876,7 +61387,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58936,7 +61448,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -58996,7 +61509,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 2,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 4
   },
   {
     "Province/State": "",
@@ -59056,7 +61570,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59116,7 +61631,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59176,7 +61692,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -59236,7 +61753,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59296,7 +61814,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59356,7 +61875,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59416,7 +61936,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59476,7 +61997,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59536,7 +62058,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59596,7 +62119,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59656,7 +62180,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59716,7 +62241,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59776,7 +62302,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -59836,7 +62363,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -59896,7 +62424,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "",
@@ -59956,7 +62485,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -60016,7 +62546,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -60076,7 +62607,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ontario",
@@ -60136,7 +62668,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alberta",
@@ -60196,7 +62729,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Quebec",
@@ -60256,7 +62790,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -60316,7 +62851,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -60376,7 +62912,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -60436,7 +62973,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington",
@@ -60496,7 +63034,8 @@ var deaths=[
     "3/12/20": 31,
     "3/13/20": 37,
     "3/14/20": 37,
-    "3/15/20": 40
+    "3/15/20": 40,
+    "3/16/20": 48
   },
   {
     "Province/State": "New York",
@@ -60556,7 +63095,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 2,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 10
   },
   {
     "Province/State": "California",
@@ -60616,7 +63156,8 @@ var deaths=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 5,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 7
   },
   {
     "Province/State": "Massachusetts",
@@ -60676,7 +63217,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Diamond Princess",
@@ -60736,7 +63278,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grand Princess",
@@ -60796,7 +63339,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Georgia",
@@ -60856,7 +63400,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Colorado",
@@ -60916,7 +63461,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Florida",
@@ -60976,7 +63522,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 3,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 5
   },
   {
     "Province/State": "New Jersey",
@@ -61036,7 +63583,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Oregon",
@@ -61096,7 +63644,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Texas",
@@ -61156,7 +63705,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Illinois",
@@ -61216,7 +63766,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pennsylvania",
@@ -61276,7 +63827,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Iowa",
@@ -61336,7 +63888,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maryland",
@@ -61396,7 +63949,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "North Carolina",
@@ -61456,7 +64010,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "South Carolina",
@@ -61516,7 +64071,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "Tennessee",
@@ -61576,7 +64132,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Virginia",
@@ -61636,7 +64193,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Arizona",
@@ -61696,7 +64254,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Indiana",
@@ -61756,7 +64315,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "Kentucky",
@@ -61816,7 +64376,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "District of Columbia",
@@ -61876,7 +64437,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nevada",
@@ -61936,7 +64498,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "New Hampshire",
@@ -61996,7 +64559,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Minnesota",
@@ -62056,7 +64620,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nebraska",
@@ -62116,7 +64681,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ohio",
@@ -62176,7 +64742,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rhode Island",
@@ -62236,7 +64803,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wisconsin",
@@ -62296,7 +64864,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Connecticut",
@@ -62356,7 +64925,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hawaii",
@@ -62416,7 +64986,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Oklahoma",
@@ -62476,7 +65047,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Utah",
@@ -62536,7 +65108,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -62596,7 +65169,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -62656,7 +65230,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -62716,7 +65291,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -62776,7 +65352,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Kansas",
@@ -62836,7 +65413,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Louisiana",
@@ -62896,7 +65474,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 3
   },
   {
     "Province/State": "Missouri",
@@ -62956,7 +65535,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Vermont",
@@ -63016,7 +65596,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alaska",
@@ -63076,7 +65657,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arkansas",
@@ -63136,7 +65718,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Delaware",
@@ -63196,7 +65779,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Idaho",
@@ -63256,7 +65840,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maine",
@@ -63316,7 +65901,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Michigan",
@@ -63376,7 +65962,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Mississippi",
@@ -63436,7 +66023,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montana",
@@ -63496,7 +66084,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Mexico",
@@ -63556,7 +66145,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "North Dakota",
@@ -63616,7 +66206,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "South Dakota",
@@ -63676,7 +66267,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "West Virginia",
@@ -63736,7 +66328,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wyoming",
@@ -63796,7 +66389,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hubei",
@@ -63856,7 +66450,8 @@ var deaths=[
     "3/12/20": 3056,
     "3/13/20": 3062,
     "3/14/20": 3075,
-    "3/15/20": 3085
+    "3/15/20": 3085,
+    "3/16/20": 3099
   },
   {
     "Province/State": "",
@@ -63916,7 +66511,8 @@ var deaths=[
     "3/12/20": 429,
     "3/13/20": 514,
     "3/14/20": 611,
-    "3/15/20": 724
+    "3/15/20": 724,
+    "3/16/20": 853
   },
   {
     "Province/State": "",
@@ -63976,7 +66572,8 @@ var deaths=[
     "3/12/20": 66,
     "3/13/20": 66,
     "3/14/20": 72,
-    "3/15/20": 75
+    "3/15/20": 75,
+    "3/16/20": 75
   },
   {
     "Province/State": "France",
@@ -64036,7 +66633,8 @@ var deaths=[
     "3/12/20": 48,
     "3/13/20": 79,
     "3/14/20": 91,
-    "3/15/20": 91
+    "3/15/20": 91,
+    "3/16/20": 148
   },
   {
     "Province/State": "Guangdong",
@@ -64096,7 +66694,8 @@ var deaths=[
     "3/12/20": 8,
     "3/13/20": 8,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "Henan",
@@ -64156,7 +66755,8 @@ var deaths=[
     "3/12/20": 22,
     "3/13/20": 22,
     "3/14/20": 22,
-    "3/15/20": 22
+    "3/15/20": 22,
+    "3/16/20": 22
   },
   {
     "Province/State": "Zhejiang",
@@ -64216,7 +66816,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Hunan",
@@ -64276,7 +66877,8 @@ var deaths=[
     "3/12/20": 4,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "Anhui",
@@ -64336,7 +66938,8 @@ var deaths=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "Jiangxi",
@@ -64396,7 +66999,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Shandong",
@@ -64456,7 +67060,8 @@ var deaths=[
     "3/12/20": 6,
     "3/13/20": 7,
     "3/14/20": 7,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 7
   },
   {
     "Province/State": "Diamond Princess",
@@ -64516,7 +67121,8 @@ var deaths=[
     "3/12/20": 7,
     "3/13/20": 7,
     "3/14/20": 7,
-    "3/15/20": 7
+    "3/15/20": 7,
+    "3/16/20": 7
   },
   {
     "Province/State": "Jiangsu",
@@ -64576,7 +67182,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Chongqing",
@@ -64636,7 +67243,8 @@ var deaths=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "Sichuan",
@@ -64696,7 +67304,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "Heilongjiang",
@@ -64756,7 +67365,8 @@ var deaths=[
     "3/12/20": 13,
     "3/13/20": 13,
     "3/14/20": 13,
-    "3/15/20": 13
+    "3/15/20": 13,
+    "3/16/20": 13
   },
   {
     "Province/State": "Denmark",
@@ -64816,7 +67426,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 1,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 3
   },
   {
     "Province/State": "Beijing",
@@ -64876,7 +67487,8 @@ var deaths=[
     "3/12/20": 8,
     "3/13/20": 8,
     "3/14/20": 8,
-    "3/15/20": 8
+    "3/15/20": 8,
+    "3/16/20": 8
   },
   {
     "Province/State": "Shanghai",
@@ -64936,7 +67548,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "Hebei",
@@ -64996,7 +67609,8 @@ var deaths=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "Fujian",
@@ -65056,7 +67670,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Guangxi",
@@ -65116,7 +67731,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Shaanxi",
@@ -65176,7 +67792,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Yunnan",
@@ -65236,7 +67853,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Hainan",
@@ -65296,7 +67914,8 @@ var deaths=[
     "3/12/20": 6,
     "3/13/20": 6,
     "3/14/20": 6,
-    "3/15/20": 6
+    "3/15/20": 6,
+    "3/16/20": 6
   },
   {
     "Province/State": "Guizhou",
@@ -65356,7 +67975,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Tianjin",
@@ -65416,7 +68036,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "Shanxi",
@@ -65476,7 +68097,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gansu",
@@ -65536,7 +68158,8 @@ var deaths=[
     "3/12/20": 2,
     "3/13/20": 2,
     "3/14/20": 2,
-    "3/15/20": 2
+    "3/15/20": 2,
+    "3/16/20": 2
   },
   {
     "Province/State": "Hong Kong",
@@ -65596,7 +68219,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 4,
     "3/14/20": 4,
-    "3/15/20": 4
+    "3/15/20": 4,
+    "3/16/20": 4
   },
   {
     "Province/State": "Liaoning",
@@ -65656,7 +68280,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Jilin",
@@ -65716,7 +68341,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -65776,7 +68402,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Xinjiang",
@@ -65836,7 +68463,8 @@ var deaths=[
     "3/12/20": 3,
     "3/13/20": 3,
     "3/14/20": 3,
-    "3/15/20": 3
+    "3/15/20": 3,
+    "3/16/20": 3
   },
   {
     "Province/State": "Inner Mongolia",
@@ -65896,7 +68524,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Ningxia",
@@ -65956,7 +68585,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66016,7 +68646,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -66076,7 +68707,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66136,7 +68768,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Qinghai",
@@ -66196,7 +68829,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Macau",
@@ -66256,7 +68890,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66316,7 +68951,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66376,7 +69012,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Faroe Islands",
@@ -66436,7 +69073,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St Martin",
@@ -66496,7 +69134,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66556,7 +69195,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Channel Islands",
@@ -66616,7 +69256,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Brunswick",
@@ -66676,7 +69317,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tibet",
@@ -66736,7 +69378,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66796,7 +69439,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66856,7 +69500,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saint Barthelemy",
@@ -66916,7 +69561,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -66976,7 +69622,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -67036,7 +69683,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -67096,7 +69744,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gibraltar",
@@ -67156,7 +69805,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kitsap, WA",
@@ -67216,7 +69866,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Solano, CA",
@@ -67276,7 +69927,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Cruz, CA",
@@ -67336,7 +69988,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Napa, CA",
@@ -67396,7 +70049,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ventura, CA",
@@ -67456,7 +70110,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Worcester, MA",
@@ -67516,7 +70171,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gwinnett, GA",
@@ -67576,7 +70232,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "DeKalb, GA",
@@ -67636,7 +70293,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Floyd, GA",
@@ -67696,7 +70354,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fayette, GA",
@@ -67756,7 +70415,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gregg, TX",
@@ -67816,7 +70476,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Monmouth, NJ",
@@ -67876,7 +70537,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Burlington, NJ",
@@ -67936,7 +70598,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Camden, NJ",
@@ -67996,7 +70659,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Passaic, NJ",
@@ -68056,7 +70720,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Union, NJ",
@@ -68116,7 +70781,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Eagle, CO",
@@ -68176,7 +70842,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Larimer, CO",
@@ -68236,7 +70903,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arapahoe, CO",
@@ -68296,7 +70964,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Gunnison, CO",
@@ -68356,7 +71025,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kane, IL",
@@ -68416,7 +71086,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Monroe, PA",
@@ -68476,7 +71147,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Philadelphia, PA",
@@ -68536,7 +71208,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Norfolk, VA",
@@ -68596,7 +71269,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Arlington, VA",
@@ -68656,7 +71330,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Spotsylvania, VA",
@@ -68716,7 +71391,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Loudoun, VA",
@@ -68776,7 +71452,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Prince George's, MD",
@@ -68836,7 +71513,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pottawattamie, IA",
@@ -68896,7 +71574,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Camden, NC",
@@ -68956,7 +71635,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pima, AZ",
@@ -69016,7 +71696,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Noble, IN",
@@ -69076,7 +71757,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Adams, IN",
@@ -69136,7 +71818,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Boone, IN",
@@ -69196,7 +71879,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Dane, WI",
@@ -69256,7 +71940,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pierce, WI",
@@ -69316,7 +72001,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cuyahoga, OH",
@@ -69376,7 +72062,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Weber, UT",
@@ -69436,7 +72123,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bennington County, VT",
@@ -69496,7 +72184,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Carver County, MN",
@@ -69556,7 +72245,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charlotte County, FL",
@@ -69616,7 +72306,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cherokee County, GA",
@@ -69676,7 +72367,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Collin County, TX",
@@ -69736,7 +72428,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson County, KY",
@@ -69796,7 +72489,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson Parish, LA",
@@ -69856,7 +72550,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Shasta County, CA",
@@ -69916,7 +72611,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Spartanburg County, SC",
@@ -69976,7 +72672,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harrison County, KY",
@@ -70036,7 +72733,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson County, IA",
@@ -70096,7 +72794,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Berkshire County, MA",
@@ -70156,7 +72855,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davidson County, TN",
@@ -70216,7 +72916,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, OR",
@@ -70276,7 +72977,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fresno County, CA",
@@ -70336,7 +73038,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harford County, MD",
@@ -70396,7 +73099,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hendricks County, IN",
@@ -70456,7 +73160,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hudson County, NJ",
@@ -70516,7 +73221,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson County, KS",
@@ -70576,7 +73282,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kittitas County, WA",
@@ -70636,7 +73343,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Manatee County, FL",
@@ -70696,7 +73404,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marion County, OR",
@@ -70756,7 +73465,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Okaloosa County, FL",
@@ -70816,7 +73526,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Polk County, GA",
@@ -70876,7 +73587,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Riverside County, CA",
@@ -70936,7 +73648,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Shelby County, TN",
@@ -70996,7 +73709,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St. Louis County, MO",
@@ -71056,7 +73770,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Suffolk County, NY",
@@ -71116,7 +73831,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ulster County, NY",
@@ -71176,7 +73892,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Volusia County, FL",
@@ -71236,7 +73953,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fairfax County, VA",
@@ -71296,7 +74014,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rockingham County, NH",
@@ -71356,7 +74075,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington, D.C.",
@@ -71416,7 +74136,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery County, PA",
@@ -71476,7 +74197,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alameda County, CA",
@@ -71536,7 +74258,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Broward County, FL",
@@ -71596,7 +74319,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lee County, FL",
@@ -71656,7 +74380,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pinal County, AZ",
@@ -71716,7 +74441,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Rockland County, NY",
@@ -71776,7 +74502,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saratoga County, NY",
@@ -71836,7 +74563,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charleston County, SC",
@@ -71896,7 +74624,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Clark County, WA",
@@ -71956,7 +74685,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cobb County, GA",
@@ -72016,7 +74746,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davis County, UT",
@@ -72076,7 +74807,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "El Paso County, CO",
@@ -72136,7 +74868,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Honolulu County, HI",
@@ -72196,7 +74929,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jackson County, OR",
@@ -72256,7 +74990,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson County, WA",
@@ -72316,7 +75051,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Kershaw County, SC",
@@ -72376,7 +75112,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Klamath County, OR",
@@ -72436,7 +75173,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Madera County, CA",
@@ -72496,7 +75234,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pierce County, WA",
@@ -72556,7 +75295,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tulsa County, OK",
@@ -72616,7 +75356,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, CO",
@@ -72676,7 +75417,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Providence County, RI",
@@ -72736,7 +75478,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Chatham County, NC",
@@ -72796,7 +75539,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Delaware County, PA",
@@ -72856,7 +75600,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Douglas County, NE",
@@ -72916,7 +75661,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fayette County, KY",
@@ -72976,7 +75722,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marion County, IN",
@@ -73036,7 +75783,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Middlesex County, MA",
@@ -73096,7 +75844,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nassau County, NY",
@@ -73156,7 +75905,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Ramsey County, MN",
@@ -73216,7 +75966,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washoe County, NV",
@@ -73276,7 +76027,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wayne County, PA",
@@ -73336,7 +76088,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Yolo County, CA",
@@ -73396,7 +76149,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Clara County, CA",
@@ -73456,7 +76210,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Clark County, NV",
@@ -73516,7 +76271,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fort Bend County, TX",
@@ -73576,7 +76332,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grant County, WA",
@@ -73636,7 +76393,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Santa Rosa County, FL",
@@ -73696,7 +76454,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Williamson County, TN",
@@ -73756,7 +76515,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New York County, NY",
@@ -73816,7 +76576,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery County, MD",
@@ -73876,7 +76637,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Suffolk County, MA",
@@ -73936,7 +76698,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Denver County, CO",
@@ -73996,7 +76759,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Summit County, CO",
@@ -74056,7 +76820,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bergen County, NJ",
@@ -74116,7 +76881,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Harris County, TX",
@@ -74176,7 +76942,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Francisco County, CA",
@@ -74236,7 +77003,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Contra Costa County, CA",
@@ -74296,7 +77064,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Orange County, CA",
@@ -74356,7 +77125,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Norfolk County, MA",
@@ -74416,7 +77186,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Maricopa County, AZ",
@@ -74476,7 +77247,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wake County, NC",
@@ -74536,7 +77308,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Westchester County, NY",
@@ -74596,7 +77369,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grafton County, NH",
@@ -74656,7 +77430,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hillsborough, FL",
@@ -74716,7 +77491,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Placer County, CA",
@@ -74776,7 +77552,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Mateo, CA",
@@ -74836,7 +77613,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sonoma County, CA",
@@ -74896,7 +77674,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Umatilla, OR",
@@ -74956,7 +77735,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fulton County, GA",
@@ -75016,7 +77796,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Washington County, OR",
@@ -75076,7 +77857,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Snohomish County, WA",
@@ -75136,7 +77918,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Humboldt County, CA",
@@ -75196,7 +77979,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sacramento County, CA",
@@ -75256,7 +78040,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Diego County, CA",
@@ -75316,7 +78101,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Benito, CA",
@@ -75376,7 +78162,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Los Angeles, CA",
@@ -75436,7 +78223,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "King County, WA",
@@ -75496,7 +78284,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Cook County, IL",
@@ -75556,7 +78345,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Skagit, WA",
@@ -75616,7 +78406,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Thurston, WA",
@@ -75676,7 +78467,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Island, WA",
@@ -75736,7 +78528,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Whatcom, WA",
@@ -75796,7 +78589,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Marin, CA",
@@ -75856,7 +78650,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Calaveras, CA",
@@ -75916,7 +78711,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Stanislaus, CA",
@@ -75976,7 +78772,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "San Joaquin, CA",
@@ -76036,7 +78833,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Essex, MA",
@@ -76096,7 +78894,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charlton, GA",
@@ -76156,7 +78955,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Collier, FL",
@@ -76216,7 +79016,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pinellas, FL",
@@ -76276,7 +79077,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alachua, FL",
@@ -76336,7 +79138,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Nassau, FL",
@@ -76396,7 +79199,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pasco, FL",
@@ -76456,7 +79260,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Dallas, TX",
@@ -76516,7 +79321,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Tarrant, TX",
@@ -76576,7 +79382,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Montgomery, TX",
@@ -76636,7 +79443,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Middlesex, NJ",
@@ -76696,7 +79504,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Jefferson, CO",
@@ -76756,7 +79565,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Multnomah, OR",
@@ -76816,7 +79626,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Polk, OR",
@@ -76876,7 +79687,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Deschutes, OR",
@@ -76936,7 +79748,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "McHenry, IL",
@@ -76996,7 +79809,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lake, IL",
@@ -77056,7 +79870,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bucks, PA",
@@ -77116,7 +79931,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Hanover, VA",
@@ -77176,7 +79992,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Lancaster, SC",
@@ -77236,7 +80053,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Sullivan, TN",
@@ -77296,7 +80114,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Johnson, IN",
@@ -77356,7 +80175,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Howard, IN",
@@ -77416,7 +80236,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "St. Joseph, IN",
@@ -77476,7 +80297,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Knox, NE",
@@ -77536,7 +80358,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Stark, OH",
@@ -77596,7 +80419,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Anoka, MN",
@@ -77656,7 +80480,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Olmsted, MN",
@@ -77716,7 +80541,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Summit, UT",
@@ -77776,7 +80602,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Fairfield, CT",
@@ -77836,7 +80663,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Litchfield, CT",
@@ -77896,7 +80724,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Orleans, LA",
@@ -77956,7 +80785,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Pennington, SD",
@@ -78016,7 +80846,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Beadle, SD",
@@ -78076,7 +80907,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Charles Mix, SD",
@@ -78136,7 +80968,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Davison, SD",
@@ -78196,7 +81029,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Minnehaha, SD",
@@ -78256,7 +81090,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bon Homme, SD",
@@ -78316,7 +81151,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Socorro, NM",
@@ -78376,7 +81212,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Bernalillo, NM",
@@ -78436,7 +81273,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Oakland, MI",
@@ -78496,7 +81334,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Wayne, MI",
@@ -78556,7 +81395,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "New Castle, DE",
@@ -78616,7 +81456,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -78676,7 +81517,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -78736,7 +81578,8 @@ var deaths=[
     "3/12/20": 1,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "Australian Capital Territory",
@@ -78796,7 +81639,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "United Kingdom",
@@ -78856,7 +81700,8 @@ var deaths=[
     "3/12/20": 8,
     "3/13/20": 8,
     "3/14/20": 21,
-    "3/15/20": 21
+    "3/15/20": 21,
+    "3/16/20": 55
   },
   {
     "Province/State": "",
@@ -78916,7 +81761,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "French Polynesia",
@@ -78976,67 +81822,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Cayman Islands",
-    "Lat": 19.3133,
-    "Long": -81.2546,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79096,7 +81883,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Manitoba",
@@ -79156,7 +81944,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Saskatchewan",
@@ -79216,7 +82005,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79276,7 +82066,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79336,7 +82127,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 1,
     "3/14/20": 1,
-    "3/15/20": 1
+    "3/15/20": 1,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -79396,7 +82188,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79456,7 +82249,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Grand Princess",
@@ -79516,7 +82310,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79576,7 +82371,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79636,7 +82432,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Alabama",
@@ -79696,7 +82493,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79756,7 +82554,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79816,7 +82615,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Puerto Rico",
@@ -79876,7 +82676,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79936,7 +82737,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -79996,7 +82798,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80056,7 +82859,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80116,7 +82920,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80176,67 +82981,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "",
-    "Country/Region": "Curacao",
-    "Lat": 12.1696,
-    "Long": -68.99,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80296,7 +83042,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80356,7 +83103,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80416,7 +83164,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 1
   },
   {
     "Province/State": "",
@@ -80476,7 +83225,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80536,7 +83286,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80596,7 +83347,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80656,7 +83408,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80716,7 +83469,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80776,67 +83530,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
-  },
-  {
-    "Province/State": "Virgin Islands, U.S.",
-    "Country/Region": "US",
-    "Lat": 18.3358,
-    "Long": -64.8963,
-    "1/22/20": 0,
-    "1/23/20": 0,
-    "1/24/20": 0,
-    "1/25/20": 0,
-    "1/26/20": 0,
-    "1/27/20": 0,
-    "1/28/20": 0,
-    "1/29/20": 0,
-    "1/30/20": 0,
-    "1/31/20": 0,
-    "2/1/20": 0,
-    "2/2/20": 0,
-    "2/3/20": 0,
-    "2/4/20": 0,
-    "2/5/20": 0,
-    "2/6/20": 0,
-    "2/7/20": 0,
-    "2/8/20": 0,
-    "2/9/20": 0,
-    "2/10/20": 0,
-    "2/11/20": 0,
-    "2/12/20": 0,
-    "2/13/20": 0,
-    "2/14/20": 0,
-    "2/15/20": 0,
-    "2/16/20": 0,
-    "2/17/20": 0,
-    "2/18/20": 0,
-    "2/19/20": 0,
-    "2/20/20": 0,
-    "2/21/20": 0,
-    "2/22/20": 0,
-    "2/23/20": 0,
-    "2/24/20": 0,
-    "2/25/20": 0,
-    "2/26/20": 0,
-    "2/27/20": 0,
-    "2/28/20": 0,
-    "2/29/20": 0,
-    "3/1/20": 0,
-    "3/2/20": 0,
-    "3/3/20": 0,
-    "3/4/20": 0,
-    "3/5/20": 0,
-    "3/6/20": 0,
-    "3/7/20": 0,
-    "3/8/20": 0,
-    "3/9/20": 0,
-    "3/10/20": 0,
-    "3/11/20": 0,
-    "3/12/20": 0,
-    "3/13/20": 0,
-    "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -80896,7 +83591,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "French Guiana",
@@ -80956,7 +83652,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Guam",
@@ -81016,7 +83713,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -81076,7 +83774,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Newfoundland and Labrador",
@@ -81136,7 +83835,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Prince Edward Island",
@@ -81196,7 +83896,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -81256,7 +83957,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -81316,7 +84018,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -81376,7 +84079,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "Mayotte",
@@ -81436,7 +84140,8 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
   },
   {
     "Province/State": "",
@@ -81496,11 +84201,1050 @@ var deaths=[
     "3/12/20": 0,
     "3/13/20": 0,
     "3/14/20": 0,
-    "3/15/20": 0
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Netherlands",
+    "Country/Region": "Netherlands",
+    "Lat": 52.1326,
+    "Long": 5.2913,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 1,
+    "3/7/20": 1,
+    "3/8/20": 3,
+    "3/9/20": 3,
+    "3/10/20": 4,
+    "3/11/20": 5,
+    "3/12/20": 5,
+    "3/13/20": 10,
+    "3/14/20": 12,
+    "3/15/20": 20,
+    "3/16/20": 24
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "French Guiana",
+    "Lat": 3.9339,
+    "Long": -53.1258,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Nova Scotia",
+    "Country/Region": "Canada",
+    "Lat": 44.682,
+    "Long": -63.7443,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Guadeloupe",
+    "Country/Region": "France",
+    "Lat": 16.25,
+    "Long": -61.5833,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Guam",
+    "Lat": 13.4443,
+    "Long": 144.7937,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Puerto Rico",
+    "Lat": 18.2,
+    "Long": -66.5,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Benin",
+    "Lat": 9.3077,
+    "Long": 2.3158,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Greenland",
+    "Lat": 71.7069,
+    "Long": -42.6043,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Liberia",
+    "Lat": 6.4281,
+    "Long": -9.4295,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Mayotte",
+    "Lat": -12.8275,
+    "Long": 45.1662,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Curacao",
+    "Country/Region": "Netherlands",
+    "Lat": 12.1696,
+    "Long": -68.99,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Republic of the Congo",
+    "Lat": -1.44,
+    "Long": 15.556,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Somalia",
+    "Lat": 5.1521,
+    "Long": 46.1996,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "Tanzania",
+    "Lat": -6.369,
+    "Long": 34.8888,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "",
+    "Country/Region": "The Bahamas",
+    "Lat": 24.25,
+    "Long": -76,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Virgin Islands",
+    "Country/Region": "US",
+    "Lat": 18.3358,
+    "Long": -64.8963,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 0
+  },
+  {
+    "Province/State": "Cayman Islands",
+    "Country/Region": "United Kingdom",
+    "Lat": 19.3133,
+    "Long": -81.2546,
+    "1/22/20": 0,
+    "1/23/20": 0,
+    "1/24/20": 0,
+    "1/25/20": 0,
+    "1/26/20": 0,
+    "1/27/20": 0,
+    "1/28/20": 0,
+    "1/29/20": 0,
+    "1/30/20": 0,
+    "1/31/20": 0,
+    "2/1/20": 0,
+    "2/2/20": 0,
+    "2/3/20": 0,
+    "2/4/20": 0,
+    "2/5/20": 0,
+    "2/6/20": 0,
+    "2/7/20": 0,
+    "2/8/20": 0,
+    "2/9/20": 0,
+    "2/10/20": 0,
+    "2/11/20": 0,
+    "2/12/20": 0,
+    "2/13/20": 0,
+    "2/14/20": 0,
+    "2/15/20": 0,
+    "2/16/20": 0,
+    "2/17/20": 0,
+    "2/18/20": 0,
+    "2/19/20": 0,
+    "2/20/20": 0,
+    "2/21/20": 0,
+    "2/22/20": 0,
+    "2/23/20": 0,
+    "2/24/20": 0,
+    "2/25/20": 0,
+    "2/26/20": 0,
+    "2/27/20": 0,
+    "2/28/20": 0,
+    "2/29/20": 0,
+    "3/1/20": 0,
+    "3/2/20": 0,
+    "3/3/20": 0,
+    "3/4/20": 0,
+    "3/5/20": 0,
+    "3/6/20": 0,
+    "3/7/20": 0,
+    "3/8/20": 0,
+    "3/9/20": 0,
+    "3/10/20": 0,
+    "3/11/20": 0,
+    "3/12/20": 0,
+    "3/13/20": 0,
+    "3/14/20": 0,
+    "3/15/20": 0,
+    "3/16/20": 1
   }
 ];
 
 var data=[];
+var txt=[];
 
 var dates=[];
 for(var k in confirmed[0]){
@@ -81509,6 +85253,7 @@ for(var k in confirmed[0]){
 
 for(var reg=0;reg<regions.length;reg++){
   data.push([]);
+  txt.push("");
 }
 var newP=[];
 for(var i=0;i<confirmed.length;i++){
@@ -81529,21 +85274,19 @@ for(var i=0;i<confirmed.length;i++){
 
   if(r>=0){
     data[r]=[confirmed[i].Lat,confirmed[i].Long,[cnf,rec,ded]];
+    txt[r]=(r/255>>0)+","+(r%255)+"- "+confirmed[i]["Province/State"]+", "+confirmed[i]["Country/Region"];
   }
   else{
     newP.push([confirmed[i]["Country/Region"],confirmed[i]["Province/State"]]);
     data.push([confirmed[i].Lat,confirmed[i].Long,[cnf,rec,ded]]);
+    txt.push((txt.length/255>>0)+","+(txt.length%255)+"- "+confirmed[i]["Country/Region"]+", "+confirmed[i]["Province/State"]);
   }
 }
 
 if(newP.length>0){
-  var txt='';
-  for(var i=0;i<confirmed.length;i++){
-    txt+=(i/255>>0)+","+(i%255)+"- "+confirmed[i]["Province/State"]+", "+confirmed[i]["Country/Region"]+"\n";
-  }
-  console.log(txt);
+  console.log(txt.join('\n'));
 
-  console.log(newP);
+  console.log(JSON.stringify(newP));
 }
 
 document.body.innerText=JSON.stringify(data);
