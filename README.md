@@ -7,7 +7,7 @@
 
 ### Population data map: https://upload.wikimedia.org/wikipedia/commons/4/49/World_population_density_1994_-_with_equator.png
 
-A pre-rendered video is included in this REPO.
+A pre-rendered video is included in this REPO: https://efhiii.github.io/COVID-19/COVID-19.mp4
 
 Since there are over 150,000 dots, the FPS is hard-coded to 5 FPS to try and even out the frame rate (mainly for recording purposes) but you can view this in your browser here: http://efhiii.github.io/COVID-19
 
