@@ -166,6 +166,13 @@ function easyNum(n){
   }
 }
 timeLine[0]=timeLine[1];
+var legendDots=[];
+for(var i=0;i<10;i++){
+    legendDots.push([14+Math.random()*3,54+Math.random()*3]);
+}
+for(var i=0;i<100;i++){
+    legendDots.push([14+Math.random()*3,74+Math.random()*3]);
+}
 function draw() {
   background(0);
   image(worldMap,0,height/2-width/4+width/200,width,width/2-width/100);
@@ -190,15 +197,17 @@ function draw() {
   noStroke();
 
   fill(255);
-  textSize(25);
-  textAlign(CENTER,TOP);
+  textSize(45);
+  textAlign(CENTER,CENTER);
 
   var dateTime=new Date(new Date("1/22/20").getTime()+1000*60*60*24*(onDay+t/timeLine[onDay].length));
 
-  text(dateTime.toDateString().split(' ').slice(1,4).join(' '),width/2,5);
+  text(dateTime.toDateString().split(' ').slice(1,4).join(' '),width/2,(height/2-width/4+width/200)/2);
   textAlign(CENTER,BOTTOM);
-  textSize(15);
-  text("Only showing reported confirmed cases; https://github.com/CSSEGISandData/COVID-19\nPosition of dots is approximate based on country/region and is inaccurate\n©2020 Edward Haas",width/2,height-5);
+  textSize(26);
+  text("Only showing reported confirmed cases - Data from Johns Hopkins University https://github.com/CSSEGISandData/COVID-19\nPosition of dots is approximate based on country/region",width/2,height-5);
+  textAlign(LEFT,BOTTOM);
+  text("©2020 Edward Haas",5,height-5);
 
   fill(255,0,0);
 
@@ -286,7 +295,8 @@ function draw() {
         rect(particles[i][j][0]-1,particles[i][j][1]-1,3,3);
         break;
         default:
-        fill(0,Math.log(particles[i].length)/Math.log(1.05),0,particles[i][j][2]/4);
+        //fill(0,Math.log(particles[i].length)/Math.log(1.05),0,particles[i][j][2]/4);
+        fill(0,255,0,particles[i][j][2]/4);
         rect(particles[i][j][0],particles[i][j][1],1,1);
       }
       if(particles[i][j][3]>0){
@@ -322,21 +332,29 @@ function draw() {
   fill(255);
   rect(width-20,y-sf*recoveries,20,1);
   text(easyNum(recoveries)+" Recoveries",width-22,y-sf*recoveries-10);
-  fill(50,200,50,80);
+  fill(100,150,250,80);
   rect(width-10,y-sf*recoveries,10,sf*recoveries);
 
   fill(255,0,0);
-  rect(14,34,3,3);
-  fill(0,128,0);
-  rect(15,15,1,1);
+  rect(14,14,3,3);
+
+  fill(0,255,0,100);
+  rect(15,35,1,1);
+
+  for(var i=0;i<legendDots.length;i++){
+    rect(legendDots[i][0],legendDots[i][1],1,1);
+  }
+
   fill(255);
 
   textSize(18);
   textAlign(RIGHT,CENTER);
   text("Total Stats",width-2,height-15);
   textAlign(LEFT,CENTER);
-  text("single confirmed case",30,15);
-  text("single death",30,35);
+  text("1 death",30,15);
+  text("1 confirmed case",30,35);
+  text("10 confirmed cases",30,55);
+  text("100+ confirmed cases",30,75);
 }
 
 function windowResized() {
