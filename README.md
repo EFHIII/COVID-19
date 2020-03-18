@@ -1,4 +1,4 @@
-# COVID-19 spread from January 23 through March 14th
+# COVID-19 confirmed cases from January 23 through March 14th
 ### Data is from https://github.com/CSSEGISandData/COVID-19
 
 ### Original map: https://upload.wikimedia.org/wikipedia/commons/4/4b/Equal_Earth_with_Tissot%27s_Indicatrices_of_Distortion.svg
