@@ -9,6 +9,6 @@
 
 A pre-rendered video is included in this REPO.
 
-Since there are over 150,000 the FPS is hard-coded to 5 FPS, but you can view this in your browser here: http://efhiii.github.io/COVID-19
+Since there are over 150,000 dots, the FPS is hard-coded to 5 FPS to try and even out the frame rate (mainly for recording purposes) but you can view this in your browser here: http://efhiii.github.io/COVID-19
 
 The Animation spreads out data for a single day throughout that day's time period within the region it occurred in at a distribution based on the population map cited above. I don't have the actual location of every single case, just the countries' confirmed case numbers as compiled by.
